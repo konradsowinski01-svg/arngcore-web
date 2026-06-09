@@ -48,19 +48,60 @@
       </div>
 
       <div class="hero-visual reveal reveal-delay-2">
-        <div class="phone-mockup">
-          <div class="phone-mockup__shell">
-            <img
-              class="phone-mockup__screen"
-              src="images/app-home.png"
-              alt="Ekran główny aplikacji ARNGCOR — codzienna praktyka, pomoc w bólu i wyzwania"
-              width="499"
-              height="1024"
-              loading="eager"
-              decoding="async"
-            >
-          </div>
-        </div>
+        <svg class="phone-frame" viewBox="0 0 280 560" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Telefon z ekranem aplikacji ARNGCOR">
+          <defs>
+            <linearGradient id="phoneBodyGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3a302a"/>
+              <stop offset="45%" stop-color="#1a1512"/>
+              <stop offset="100%" stop-color="#0f0c0a"/>
+            </linearGradient>
+            <linearGradient id="phoneEdgeGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+              <stop offset="100%" stop-color="rgba(255,255,255,0.04)"/>
+            </linearGradient>
+            <clipPath id="phoneScreenClip">
+              <rect x="18" y="18" width="244" height="524" rx="28"/>
+            </clipPath>
+            <filter id="phoneShadow" x="-20%" y="-10%" width="140%" height="120%">
+              <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+            </filter>
+          </defs>
+
+          <!-- Phone body -->
+          <rect x="4" y="2" width="272" height="556" rx="38" fill="url(#phoneBodyGrad)" stroke="rgba(255,255,255,0.14)" stroke-width="2" filter="url(#phoneShadow)"/>
+          <rect x="4" y="2" width="272" height="556" rx="38" fill="none" stroke="url(#phoneEdgeGrad)" stroke-width="1.5"/>
+
+          <!-- Side buttons -->
+          <rect x="0" y="118" width="3" height="36" rx="1.5" fill="#2a221c"/>
+          <rect x="0" y="168" width="3" height="56" rx="1.5" fill="#2a221c"/>
+          <rect x="0" y="234" width="3" height="56" rx="1.5" fill="#2a221c"/>
+          <rect x="277" y="186" width="3" height="72" rx="1.5" fill="#2a221c"/>
+
+          <!-- Screen bezel -->
+          <rect x="10" y="10" width="260" height="540" rx="32" fill="#080605"/>
+
+          <!-- Real app screenshot on display -->
+          <image
+            href="images/app-home.png"
+            xlink:href="images/app-home.png"
+            x="18"
+            y="18"
+            width="244"
+            height="524"
+            clip-path="url(#phoneScreenClip)"
+            preserveAspectRatio="xMidYMid slice"
+          />
+
+          <!-- Screen glass highlight -->
+          <rect x="18" y="18" width="244" height="524" rx="28" fill="url(#phoneEdgeGrad)" opacity="0.08" pointer-events="none"/>
+
+          <!-- Dynamic Island -->
+          <rect x="98" y="28" width="84" height="24" rx="12" fill="#0b0908" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <circle cx="164" cy="40" r="3" fill="rgba(255,255,255,0.08)"/>
+
+          <!-- Outer frame highlight -->
+          <rect x="10" y="10" width="260" height="540" rx="32" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        </svg>
       </div>
     </div>
   </section>
