@@ -307,10 +307,28 @@ a:hover {
   justify-content: center;
 }
 
-.phone-frame {
+.phone-mockup {
   width: min(100%, 280px);
   animation: float-phone 6s ease-in-out infinite;
   filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 60px rgba(245, 134, 78, 0.15));
+}
+
+.phone-mockup__shell {
+  padding: 10px;
+  border-radius: 40px;
+  background: linear-gradient(160deg, #2a221c 0%, #141110 100%);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.phone-mockup__screen {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  display: block;
+  vertical-align: top;
 }
 
 @keyframes float-phone {
@@ -862,8 +880,8 @@ a:hover {
     order: -1;
   }
 
-  .phone-frame {
-    width: min(100%, 220px);
+  .phone-mockup {
+    width: min(100%, 240px);
   }
 
   .feature-grid {
