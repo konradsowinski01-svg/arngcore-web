@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O nas — ARNGCOR</title>
   <meta name="description" content="SovinSky Studio — twórca aplikacji ARNGCOR. Kontakt i informacje o usługodawcy.">
-  <link rel="canonical" href="https://arngcor.pl/o-nas">
+  <link rel="canonical" href="https://arngcor.pl/o-nas.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html">ARNG<span class="brand-accent">COR</span></a>
+      <a class="brand brand-gradient" href="index.html">ARNGCOR</a>
       <nav class="site-nav" aria-label="Główne">
         <a href="index.html" class="nav-link">Strona główna</a>
         <a href="o-nas.html" class="nav-link is-active">O nas</a>
@@ -22,7 +25,12 @@
   </header>
 
   <main class="wrap main-content">
-    <section class="about-block">
+    <header class="page-hero reveal">
+      <h1 class="text-gradient">O nas</h1>
+      <p>Poznaj zespół stojący za ARNGCOR i misję, która napędza codzienną praktykę ruchową.</p>
+    </header>
+
+    <section class="about-block reveal reveal-delay-1">
       <h2>SovinSky Studio</h2>
       <p>
         ARNGCOR jest tworzone przez <strong>SovinSky Studio</strong> — niezależny projekt
@@ -31,7 +39,7 @@
       </p>
     </section>
 
-    <section class="about-block">
+    <section class="about-block reveal reveal-delay-2">
       <h2>Aplikacja ARNGCOR</h2>
       <p>
         Mobilna aplikacja na iOS (w przygotowaniu także na Android) z treningami wideo,
@@ -44,7 +52,7 @@
       </p>
     </section>
 
-    <section class="about-block">
+    <section class="about-block reveal reveal-delay-3">
       <h2>Kontakt</h2>
       <p>
         Sprawy ogólne, RODO i reklamacje:<br>
@@ -59,13 +67,24 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>© SovinSky Studio · <a href="mailto:konrad.sowinski01@gmail.com">konrad.sowinski01@gmail.com</a></p>
-      <p class="footer-links">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand brand-gradient">ARNGCOR</div>
+        <p class="footer-tagline">Codzienna praktyka ruchowa · Mobilność krok po kroku</p>
+      </div>
+      <div class="footer-links">
+        <a href="o-nas.html">O nas</a>
         <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-        · <a href="regulamin.html">Regulamin</a>
-      </p>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="mailto:konrad.sowinski01@gmail.com">Kontakt</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© SovinSky Studio</span>
+      <span><a href="mailto:konrad.sowinski01@gmail.com">konrad.sowinski01@gmail.com</a></span>
     </div>
   </footer>
+
+  <script src="js/site.js" defer></script>
 </body>
 </html>
