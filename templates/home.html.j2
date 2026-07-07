@@ -1,0 +1,176 @@
+{% extends "base.html.j2" %}
+
+{% block content %}
+  <section class="hero-section">
+    <div class="hero-glow hero-glow--1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
+    <div class="wrap-wide hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+          {{ t.home.hero_eyebrow }}
+        </div>
+        <h1 class="hero-title">
+          <span class="text-gradient">{{ t.home.hero_title_gradient }}</span>{{ t.home.hero_title_mid }}<br>{{ t.home.hero_title_line2 }}
+        </h1>
+        <p class="hero-lead">{{ t.home.hero_lead }}</p>
+        <div class="hero-actions">
+          <span class="btn btn-primary">{{ t.home.cta_app_store }}</span>
+          <a href="{{ urls.about }}" class="btn btn-ghost">{{ t.home.cta_about }}</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <svg class="phone-frame" viewBox="0 0 280 560" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="{{ t.home.phone_aria }}">
+          <defs>
+            <linearGradient id="phoneBodyGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3a302a"/>
+              <stop offset="45%" stop-color="#1a1512"/>
+              <stop offset="100%" stop-color="#0f0c0a"/>
+            </linearGradient>
+            <linearGradient id="phoneEdgeGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+              <stop offset="100%" stop-color="rgba(255,255,255,0.04)"/>
+            </linearGradient>
+            <clipPath id="phoneScreenClip">
+              <rect x="18" y="18" width="244" height="524" rx="28"/>
+            </clipPath>
+            <filter id="phoneShadow" x="-20%" y="-10%" width="140%" height="120%">
+              <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+            </filter>
+          </defs>
+          <rect x="4" y="2" width="272" height="556" rx="38" fill="url(#phoneBodyGrad)" stroke="rgba(255,255,255,0.14)" stroke-width="2" filter="url(#phoneShadow)"/>
+          <rect x="4" y="2" width="272" height="556" rx="38" fill="none" stroke="url(#phoneEdgeGrad)" stroke-width="1.5"/>
+          <rect x="0" y="118" width="3" height="36" rx="1.5" fill="#2a221c"/>
+          <rect x="0" y="168" width="3" height="56" rx="1.5" fill="#2a221c"/>
+          <rect x="0" y="234" width="3" height="56" rx="1.5" fill="#2a221c"/>
+          <rect x="277" y="186" width="3" height="72" rx="1.5" fill="#2a221c"/>
+          <rect x="10" y="10" width="260" height="540" rx="32" fill="#080605"/>
+          <image href="/images/app-home.png" xlink:href="/images/app-home.png" x="18" y="18" width="244" height="524" clip-path="url(#phoneScreenClip)" preserveAspectRatio="xMidYMid slice"/>
+          <rect x="18" y="18" width="244" height="524" rx="28" fill="url(#phoneEdgeGrad)" opacity="0.08" pointer-events="none"/>
+          <rect x="98" y="28" width="84" height="24" rx="12" fill="#0b0908" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <circle cx="164" cy="40" r="3" fill="rgba(255,255,255,0.08)"/>
+          <rect x="10" y="10" width="260" height="540" rx="32" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="wrap trust-inner">
+      {% for item in t.home.trust %}
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        {{ item }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <header class="section-header reveal">
+        <span class="section-label">{{ t.home.features.label }}</span>
+        <h2 class="section-title text-gradient">{{ t.home.features.title_html | safe }}</h2>
+        <p class="section-desc">{{ t.home.features.desc }}</p>
+      </header>
+      <div class="feature-grid">
+        {% for item in t.home.features.cards %}
+        <article class="feature-card reveal reveal-delay-{{ loop.index }}">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.body | safe }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <header class="section-header reveal">
+        <span class="section-label">{{ t.home.how.label }}</span>
+        <h2 class="section-title">{{ t.home.how.title_html | safe }}</h2>
+        <p class="section-desc">{{ t.home.how.desc }}</p>
+      </header>
+      <div class="steps-grid">
+        {% for step in t.home.how.steps %}
+        <article class="step-card reveal reveal-delay-{{ loop.index }}">
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.body }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <header class="section-header reveal">
+        <span class="section-label">{{ t.home.challenges.label }}</span>
+        <h2 class="section-title text-gradient">{{ t.home.challenges.title }}</h2>
+        <p class="section-desc">{{ t.home.challenges.desc }}</p>
+      </header>
+      <div class="challenge-row">
+        <article class="challenge-card reveal reveal-delay-1">
+          <span class="challenge-badge">{{ t.home.challenges.badge }}</span>
+          <h3>{{ t.home.challenges.wheel_title }}</h3>
+          <p>{{ t.home.challenges.wheel_body }}</p>
+        </article>
+        <article class="challenge-card reveal reveal-delay-2">
+          <span class="challenge-badge">{{ t.home.challenges.badge }}</span>
+          <h3>{{ t.home.challenges.split_title }}</h3>
+          <p>{{ t.home.challenges.split_body }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <header class="section-header reveal">
+        <span class="section-label">{{ t.home.audience.label }}</span>
+        <h2 class="section-title">{{ t.home.audience.title }}</h2>
+        <p class="section-desc">{{ t.home.audience.desc }}</p>
+      </header>
+      <div class="audience-grid">
+        {% for item in t.home.audience.cards %}
+        <div class="audience-item reveal reveal-delay-{{ loop.index }}">
+          <span class="audience-emoji" aria-hidden="true">{{ item.emoji }}</span>
+          <div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.body }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="privacy-card reveal">
+        <div class="privacy-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3>{{ t.home.privacy_card.title }}</h3>
+          <p>{{ t.home.privacy_card.body_html | safe }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-glow" aria-hidden="true"></div>
+        <h2 class="text-gradient">{{ t.home.cta_banner.title }}</h2>
+        <p>{{ t.home.cta_banner.body }}</p>
+        <span class="btn btn-primary">{{ t.home.cta_banner.button }}</span>
+      </div>
+    </div>
+  </section>
+{% endblock %}

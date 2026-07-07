@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ t.html_lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+{{ seo_head | safe }}
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/i18n.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand brand-gradient" href="{{ urls.home }}">ARNGCOR</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="{{ t.nav.aria }}">
+          <a href="{{ urls.home }}" class="nav-link{% if active == 'home' %} is-active{% endif %}">{{ t.nav.home }}</a>
+          <a href="{{ urls.about }}" class="nav-link{% if active == 'about' %} is-active{% endif %}">{{ t.nav.about }}</a>
+          <a href="{{ urls.privacy }}" class="nav-link{% if active == 'privacy' %} is-active{% endif %}">{{ t.nav.privacy }}</a>
+          <a href="{{ urls.terms }}" class="nav-link{% if active == 'terms' %} is-active{% endif %}">{{ t.nav.terms }}</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="{{ t.lang.aria }}">
+          <button type="button" data-lang="pl" class="{% if t.locale == 'pl' %}is-active{% endif %}">{{ t.lang.pl }}</button>
+          <button type="button" data-lang="en" class="{% if t.locale == 'en' %}is-active{% endif %}">{{ t.lang.en }}</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand brand-gradient">ARNGCOR</div>
+        <p class="footer-tagline">{{ t.footer.tagline }}</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{ urls.about }}">{{ t.nav.about }}</a>
+        <a href="{{ urls.privacy }}">{{ t.nav.privacy }}</a>
+        <a href="{{ urls.terms }}">{{ t.nav.terms }}</a>
+        <a href="mailto:kontakt@arngcor.pl">{{ t.footer.contact }}</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>{{ t.footer.copyright }}</span>
+      <span><a href="mailto:kontakt@arngcor.pl">kontakt@arngcor.pl</a></span>
+    </div>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

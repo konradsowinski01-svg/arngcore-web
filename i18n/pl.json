@@ -1,0 +1,194 @@
+{
+  "locale": "pl",
+  "html_lang": "pl",
+  "meta": {
+    "home": {
+      "title": "ARNGCOR — aplikacja mobilna do mobilności, rozciągania i wyzwań Mostek oraz Szpagat",
+      "description": "ARNGCOR to aplikacja mobilna na iOS do codziennej praktyki ruchowej, rozciągania i mobilności. Sesje wideo, plan dopasowany do Ciebie oraz wyzwania Mostek i Szpagat.",
+      "og_title": "ARNGCOR — aplikacja mobilna do mobilności i rozciągania",
+      "og_description": "Codzienna praktyka ruchowa, sesje wideo i wyzwania Mostek oraz Szpagat. Aplikacja ARNGCOR na iOS.",
+      "twitter_description": "Codzienna praktyka ruchowa, sesje wideo i wyzwania Mostek oraz Szpagat."
+    },
+    "about": {
+      "title": "O nas — ARNGCOR",
+      "description": "Poznaj twórcę ARNGCOR i SovinSky Studio — niezależny projekt aplikacji do codziennej mobilności, rozciągania i wyzwań Mostek oraz Szpagat.",
+      "og_title": "O nas — ARNGCOR",
+      "og_description": "Poznaj twórcę ARNGCOR i SovinSky Studio — aplikacja do mobilności i rozciągania na iOS.",
+      "twitter_description": "Poznaj twórcę ARNGCOR i SovinSky Studio."
+    },
+    "privacy": {
+      "title": "Polityka prywatności — ARNGCOR",
+      "description": "Polityka prywatności aplikacji ARNGCOR — informacje o przetwarzaniu danych, RODO, kontach użytkowników i subskrypcji Premium."
+    },
+    "terms": {
+      "title": "Regulamin — ARNGCOR",
+      "description": "Regulamin korzystania z aplikacji mobilnej ARNGCOR — zasady usługi, subskrypcje, wyzwania Mostek i Szpagat oraz kontakt."
+    }
+  },
+  "nav": {
+    "aria": "Główne",
+    "home": "Strona główna",
+    "about": "O nas",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  },
+  "lang": {
+    "aria": "Język",
+    "pl": "PL",
+    "en": "EN"
+  },
+  "footer": {
+    "tagline": "Codzienna praktyka ruchowa · Mobilność krok po kroku",
+    "contact": "Kontakt",
+    "copyright": "© SovinSky Studio"
+  },
+  "home": {
+    "hero_eyebrow": "Aplikacja mobilna · iOS",
+    "hero_title_gradient": "Mobilność",
+    "hero_title_mid": ", która",
+    "hero_title_line2": "pasuje do Twojego dnia",
+    "hero_lead": "Przemyślana aplikacja mobilna, która łączy codzienną praktykę ruchową z podejściem inspirowanym jogą i fizjoterapią. Sesje wideo z katalogów opracowanych ze specjalistami, plan dopasowany do Ciebie i wyzwania, które realnie budują elastyczność - krok po kroku.",
+    "cta_app_store": "Wkrótce w App Store",
+    "cta_about": "Poznaj ARNGCOR",
+    "phone_aria": "Telefon z ekranem aplikacji ARNGCOR",
+    "trust": [
+      "Codzienna praktyka wideo",
+      "Katalogi opracowane z ekspertami",
+      "Plan dopasowany do Ciebie",
+      "Wyzwania Mostek i Szpagat"
+    ],
+    "features": {
+      "label": "Funkcje",
+      "title_html": "Wszystko, czego potrzebujesz<br>do regularnego ruchu",
+      "desc": "Nie musisz układać planu sam. ARNGCOR precyzyjnie składa codzienną sesję z rozbudowanych katalogów ćwiczeń - stworzonych przy współpracy z fizjoterapeutami, trenerami personalnymi i joginkami - i dopasowuje ją do Twojego celu, poziomu oraz nawyków.",
+      "cards": [
+        {
+          "title": "Codzienna sesja wideo",
+          "body": "Każdego dnia inna, starannie ułożona sesja wideo - dopasowana do celu, wieku, aktywności i poziomu elastyczności. Ćwiczenia z profesjonalnie przygotowanych katalogów, bez generatywnej sztucznej inteligencji."
+        },
+        {
+          "title": "Śledzenie postępu",
+          "body": "Serie dni, minuty pracy i wykonane ćwiczenia w jednym miejscu. Widzisz realny progres, a nie tylko wrażenie, że „dzisiaj ćwiczyłem”."
+        },
+        {
+          "title": "Pomoc w bólu",
+          "body": "Krótkie sekwencje ulgi na szyję, barki i odcinek lędźwiowy, gdy po wielu godzinach przy biurku czujesz sztywność i napięcie."
+        },
+        {
+          "title": "Programy wyzwań",
+          "body": "Etapowe plany z częścią stałą, ćwiczeniami wzmacniającymi i sprawdzianem, który odblokowuje kolejny poziom."
+        },
+        {
+          "title": "Profil i personalizacja",
+          "body": "Krótki onboarding ustawia cel, poziom elastyczności (1-4) i plan treningowy - bez skomplikowanych ustawień."
+        },
+        {
+          "title": "Prywatność w centrum",
+          "body": "Bez reklam behawioralnych i zewnętrznej analityki śledzącej. Twoje dane - Twoja sprawa. <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a>"
+        }
+      ]
+    },
+    "how": {
+      "label": "Jak to działa",
+      "title_html": "Od pierwszego uruchomienia<br>do codziennego nawyku",
+      "desc": "Cztery proste kroki - resztą zajmuje się ARNGCOR.",
+      "steps": [
+        {
+          "title": "Wybierz cel",
+          "body": "Siła i mobilność, ulga w bólu, nowe umiejętności albo wszystko po trochu."
+        },
+        {
+          "title": "Test elastyczności",
+          "body": "Krótki test ustala Twój poziom, dzięki czemu aplikacja wie, od czego zacząć."
+        },
+        {
+          "title": "Codzienna sesja",
+          "body": "Aplikacja układa sesję z katalogów ćwiczeń. Ćwiczenia wideo mają jasne cele: utrzymaj pozycję, wykonuj płynnie."
+        },
+        {
+          "title": "Postęp i wyzwania",
+          "body": "Odblokowuj kolejne etapy, w tym programy Mostek i Szpagat."
+        }
+      ]
+    },
+    "challenges": {
+      "label": "Wyzwania",
+      "title": "Mostek i Szpagat",
+      "desc": "Ambitne cele rozbite na przemyślane, osiągalne kroki - z odznakami postępu i sprawdzianem przed kolejnym etapem.",
+      "badge": "Program etapowy",
+      "wheel_title": "Wyzwanie Mostek",
+      "wheel_body": "Stopniowy plan od podstaw do pełnego mostka. Każdy etap buduje siłę i mobilność, zanim odblokujesz następny, a postęp widzisz w profilu.",
+      "split_title": "Wyzwanie Szpagat",
+      "split_body": "Strukturalny program rozciągania na szpagat przedni i boczny. Ćwiczenia wzmacniające, część stała i mierzalny progres w aplikacji."
+    },
+    "audience": {
+      "label": "Dla kogo",
+      "title": "Stworzone dla realnego życia",
+      "desc": "Nie musisz być sportowcem ani praktykować jogi od lat - wystarczy chęć ruchu i kilka minut dziennie.",
+      "cards": [
+        {
+          "emoji": "💺",
+          "title": "Praca siedząca",
+          "body": "Sztywność, ból pleców i bioder po wielu godzinach przy biurku."
+        },
+        {
+          "emoji": "🏃",
+          "title": "Aktywni sportowcy",
+          "body": "Lepsza mobilność, regeneracja i profilaktyka kontuzji."
+        },
+        {
+          "emoji": "🧘",
+          "title": "Początkujący",
+          "body": "Joga i rozciąganie bez presji sali pełnej ludzi - w domu, we własnym tempie."
+        },
+        {
+          "emoji": "🎯",
+          "title": "Mały, stały nawyk",
+          "body": "Jedna krótka sesja dziennie zamiast wielogodzinnych planów, których trudno się trzymać."
+        }
+      ]
+    },
+    "privacy_card": {
+      "title": "Twoja prywatność ma znaczenie",
+      "body_html": "ARNGCOR nie sprzedaje Twoich danych i nie używa reklam behawioralnych. Przetwarzamy dane zgodnie z RODO - szczegóły w <a href=\"polityka-prywatnosci.html\">polityce prywatności</a> i <a href=\"regulamin.html\">regulaminie</a>. Aplikacja nie zastępuje porady medycznej."
+    },
+    "cta_banner": {
+      "title": "Zacznij od jednej sesji dziennie",
+      "body": "Ruch staje się nawykiem, gdy jest prosty, krótki i dopasowany do Ciebie. ARNGCOR zostało stworzone dokładnie po to - żeby codziennie dawało Ci coś konkretnego.",
+      "button": "Wkrótce w App Store"
+    }
+  },
+  "about": {
+    "hero_title": "O nas",
+    "hero_lead": "Nazywam się Konrad. ARNGCOR to mój projekt - dopracowany w każdym detalu, z merytoryką opracowaną razem ze specjalistami od ruchu i zdrowia.",
+    "blocks": [
+      {
+        "title": "Konrad · SovinSky Studio",
+        "paragraphs": [
+          "Nazywam się <strong>Konrad</strong> i stoję za ARNGCOR oraz <strong>SovinSky Studio</strong> - moją osobistą marką i niezależnym projektem, który buduję od pomysłu po gotową aplikację. To nie wielka korporacja z dziesiątkami osób w zespole. To ja, moja wizja i produkt, nad którym pracuję z pełnym zaangażowaniem - bo wierzę, że codzienna praktyka ruchowa może wyglądać inaczej: prościej, mądrzej i bez układania planu od zera.",
+          "Katalogi ćwiczeń powstały przy współpracy z fizjoterapeutami, trenerami personalnymi i joginkami. Ja złożyłem z nich ARNGCOR - dopasowanie sesji, aplikację i całe doświadczenie użytkownika. Efekt to narzędzie, które łączy solidną merytorykę z przemyślanym, dopracowanym produktem cyfrowym."
+        ]
+      },
+      {
+        "title": "Aplikacja ARNGCOR",
+        "paragraphs": [
+          "Mobilna aplikacja na iOS (w przygotowaniu także na Android) z treningami wideo, programami wyzwań (Mostek, Szpagat), sekwencjami ulgi w bólu oraz opcjonalną subskrypcją Premium w Apple App Store.",
+          "Codzienna sesja powstaje z rozbudowanych katalogów ćwiczeń stworzonych przy współpracy z fizjoterapeutami, trenerami personalnymi i joginkami. Aplikacja dopasowuje ją do Twojego celu, poziomu elastyczności i aktywności.",
+          "Aplikacja nie zastępuje porady medycznej. Przed ćwiczeniami, w razie wątpliwości zdrowotnych, skonsultuj się ze specjalistą."
+        ]
+      }
+    ],
+    "contact_title": "Kontakt",
+    "contact_general_html": "Sprawy ogólne, RODO i reklamacje:<br><a href=\"mailto:kontakt@arngcor.pl\">kontakt@arngcor.pl</a>",
+    "contact_legal_html": "Dokumenty prawne: <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a>, <a href=\"regulamin.html\">Regulamin</a>."
+  },
+  "legal": {
+    "privacy_nav": "Polityka prywatności",
+    "terms_nav": "Regulamin"
+  },
+  "json_ld": {
+    "home_description": "Aplikacja mobilna ARNGCOR do codziennej praktyki ruchowej, rozciągania i mobilności. Wyzwania Mostek i Szpagat, sesje wideo i plan dopasowany do Ciebie.",
+    "about_name": "O nas — ARNGCOR",
+    "about_description": "Poznaj twórcę ARNGCOR i SovinSky Studio — niezależny projekt aplikacji do mobilności i rozciągania."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "locale": "en",
+  "html_lang": "en",
+  "meta": {
+    "home": {
+      "title": "ARNGCOR - mobile app for mobility, stretching, and Wheel and Front Split challenges",
+      "description": "ARNGCOR is an iOS mobile app for daily movement practice, stretching, and mobility. Video practices, a plan tailored to you, and Wheel and Front Split challenges.",
+      "og_title": "ARNGCOR - mobile app for mobility and stretching",
+      "og_description": "Daily movement practice, video practices, and Wheel and Front Split challenges. ARNGCOR app for iOS.",
+      "twitter_description": "Daily movement practice, video practices, and Wheel and Front Split challenges."
+    },
+    "about": {
+      "title": "About - ARNGCOR",
+      "description": "Meet the creator of ARNGCOR and SovinSky Studio - an independent project for daily mobility, stretching, and Wheel and Front Split challenges.",
+      "og_title": "About - ARNGCOR",
+      "og_description": "Meet the creator of ARNGCOR and SovinSky Studio - a mobility and stretching app for iOS.",
+      "twitter_description": "Meet the creator of ARNGCOR and SovinSky Studio."
+    },
+    "privacy": {
+      "title": "Privacy Policy - ARNGCOR",
+      "description": "ARNGCOR app privacy policy - information on data processing, GDPR, user accounts, and Premium subscriptions."
+    },
+    "terms": {
+      "title": "Terms of Service - ARNGCOR",
+      "description": "Terms of use for the ARNGCOR mobile app - service rules, subscriptions, Wheel and Front Split challenges, and contact."
+    }
+  },
+  "nav": {
+    "aria": "Main",
+    "home": "Home",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "lang": {
+    "aria": "Language",
+    "pl": "PL",
+    "en": "EN"
+  },
+  "footer": {
+    "tagline": "Daily movement practice · Mobility step by step",
+    "contact": "Contact",
+    "copyright": "© SovinSky Studio"
+  },
+  "home": {
+    "hero_eyebrow": "Mobile app · iOS",
+    "hero_title_gradient": "Mobility",
+    "hero_title_mid": "",
+    "hero_title_line2": "that fits your day",
+    "hero_lead": "A thoughtful mobile app that combines daily movement practice with an approach inspired by yoga and physical therapy. Video practices from catalogs built with specialists, a plan tailored to you, and challenges that build real flexibility - step by step.",
+    "cta_app_store": "Coming soon to the App Store",
+    "cta_about": "Discover ARNGCOR",
+    "phone_aria": "Phone showing the ARNGCOR app screen",
+    "trust": [
+      "Daily video practice",
+      "Catalogs built with experts",
+      "A plan tailored to you",
+      "Wheel and Front Split challenges"
+    ],
+    "features": {
+      "label": "Features",
+      "title_html": "Everything you need<br>for regular movement",
+      "desc": "You don't have to build the plan yourself. ARNGCOR assembles your daily practice from extensive exercise catalogs - created with physical therapists, personal trainers, and yoga teachers - and adapts it to your goal, level, and habits.",
+      "cards": [
+        {
+          "title": "Daily video practice",
+          "body": "A different, carefully built video practice every day - matched to your goal, age, activity, and flexibility level. Exercises from professionally prepared catalogs, without generative AI."
+        },
+        {
+          "title": "Progress tracking",
+          "body": "Day streaks, minutes of work, and completed exercises in one place. You see real progress, not just the feeling that you worked out today."
+        },
+        {
+          "title": "Pain Relief",
+          "body": "Short relief sequences for your neck, shoulders, and lower back when hours at a desk leave you stiff and tense."
+        },
+        {
+          "title": "Challenge programs",
+          "body": "Step-by-step plans with a fixed base, strengthening exercises, and a checkpoint that opens the next level."
+        },
+        {
+          "title": "Profile and personalization",
+          "body": "A short onboarding sets your goal, flexibility level (1-4), and training plan - without complicated settings."
+        },
+        {
+          "title": "Privacy first",
+          "body": "No behavioral ads or third-party tracking analytics. Your data is yours. <a href=\"privacy-policy.html\">Privacy Policy</a>"
+        }
+      ]
+    },
+    "how": {
+      "label": "How it works",
+      "title_html": "From first launch<br>to a daily habit",
+      "desc": "Four simple steps - ARNGCOR handles the rest.",
+      "steps": [
+        {
+          "title": "Choose your goal",
+          "body": "Strength and mobility, ease discomfort, new skills, or a bit of everything."
+        },
+        {
+          "title": "Flexibility test",
+          "body": "A short test sets your level so the app knows where to start."
+        },
+        {
+          "title": "Daily practice",
+          "body": "The app builds your practice from exercise catalogs. Video exercises have clear goals: hold the position, move smoothly."
+        },
+        {
+          "title": "Progress and challenges",
+          "body": "Open the next stages, including Wheel and Front Split programs."
+        }
+      ]
+    },
+    "challenges": {
+      "label": "Challenges",
+      "title": "Wheel and Front Split",
+      "desc": "Ambitious goals broken into thoughtful, achievable steps - with progress badges and a checkpoint before each new stage.",
+      "badge": "Step-by-step program",
+      "wheel_title": "Wheel challenge",
+      "wheel_body": "A gradual plan from basics to a full wheel. Each stage builds strength and mobility before you open the next, and you can track progress in your profile.",
+      "split_title": "Front Split challenge",
+      "split_body": "A structured stretching program for front and side splits. Strengthening exercises, a fixed base, and measurable progress in the app."
+    },
+    "audience": {
+      "label": "Who it's for",
+      "title": "Built for real life",
+      "desc": "You don't need to be an athlete or have years of yoga behind you - just a willingness to move and a few minutes a day.",
+      "cards": [
+        {
+          "emoji": "💺",
+          "title": "Desk work",
+          "body": "Stiffness and pain in your back and hips after long hours at a desk."
+        },
+        {
+          "emoji": "🏃",
+          "title": "Active athletes",
+          "body": "Better mobility, recovery, and injury prevention."
+        },
+        {
+          "emoji": "🧘",
+          "title": "Beginners",
+          "body": "Yoga and stretching without the pressure of a crowded studio - at home, at your own pace."
+        },
+        {
+          "emoji": "🎯",
+          "title": "A small, steady habit",
+          "body": "One short practice a day instead of multi-hour plans that are hard to stick with."
+        }
+      ]
+    },
+    "privacy_card": {
+      "title": "Your privacy matters",
+      "body_html": "ARNGCOR does not sell your data or use behavioral ads. We process data under GDPR - details in our <a href=\"privacy-policy.html\">privacy policy</a> and <a href=\"terms-of-service.html\">terms of service</a>. The app does not replace medical advice."
+    },
+    "cta_banner": {
+      "title": "Start with one practice a day",
+      "body": "Movement becomes a habit when it's simple, short, and tailored to you. ARNGCOR was built for exactly that - to give you something concrete every day.",
+      "button": "Coming soon to the App Store"
+    }
+  },
+  "about": {
+    "hero_title": "About",
+    "hero_lead": "My name is Konrad. ARNGCOR is my project - refined in every detail, with content developed together with movement and health specialists.",
+    "blocks": [
+      {
+        "title": "Konrad · SovinSky Studio",
+        "paragraphs": [
+          "My name is <strong>Konrad</strong>, and I stand behind ARNGCOR and <strong>SovinSky Studio</strong> - my personal brand and independent project that I build from idea to finished app. This is not a large corporation with dozens of people on the team. It's me, my vision, and a product I work on with full commitment - because I believe daily movement practice can look different: simpler, smarter, and without building a plan from scratch.",
+          "The exercise catalogs were created with physical therapists, personal trainers, and yoga teachers. I assembled ARNGCOR from them - practice matching, the app, and the full user experience. The result is a tool that combines solid expertise with a thoughtful, polished digital product."
+        ]
+      },
+      {
+        "title": "The ARNGCOR app",
+        "paragraphs": [
+          "A mobile app for iOS (Android in development) with video training, challenge programs (Wheel, Front Split), Pain Relief sequences, and an optional Premium subscription in the Apple App Store.",
+          "Your daily practice is built from extensive exercise catalogs created with physical therapists, personal trainers, and yoga teachers. The app adapts it to your goal, flexibility level, and activity.",
+          "The app does not replace medical advice. Before exercising, if you have health concerns, talk to a specialist."
+        ]
+      }
+    ],
+    "contact_title": "Contact",
+    "contact_general_html": "General inquiries, GDPR, and complaints:<br><a href=\"mailto:kontakt@arngcor.pl\">kontakt@arngcor.pl</a>",
+    "contact_legal_html": "Legal documents: <a href=\"privacy-policy.html\">Privacy Policy</a>, <a href=\"terms-of-service.html\">Terms of Service</a>."
+  },
+  "legal": {
+    "privacy_nav": "Privacy Policy",
+    "terms_nav": "Terms of Service"
+  },
+  "json_ld": {
+    "home_description": "ARNGCOR mobile app for daily movement practice, stretching, and mobility. Wheel and Front Split challenges, video practices, and a plan tailored to you.",
+    "about_name": "About - ARNGCOR",
+    "about_description": "Meet the creator of ARNGCOR and SovinSky Studio - an independent project for mobility and stretching."
+  }
+}

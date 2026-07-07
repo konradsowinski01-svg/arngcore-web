@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+
+{% block content %}
+  <main class="wrap main-content">
+    <header class="page-hero reveal">
+      <h1 class="text-gradient">{{ t.about.hero_title }}</h1>
+      <p>{{ t.about.hero_lead }}</p>
+    </header>
+
+    {% for block in t.about.blocks %}
+    <section class="about-block reveal reveal-delay-{{ loop.index }}">
+      <h2>{{ block.title }}</h2>
+      {% for paragraph in block.paragraphs %}
+      <p>{{ paragraph | safe }}</p>
+      {% endfor %}
+    </section>
+    {% endfor %}
+
+    <section class="about-block reveal reveal-delay-3">
+      <h2>{{ t.about.contact_title }}</h2>
+      <p>{{ t.about.contact_general_html | safe }}</p>
+      <p>{{ t.about.contact_legal_html | safe }}</p>
+    </section>
+  </main>
+{% endblock %}
