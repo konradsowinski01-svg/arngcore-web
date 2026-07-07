@@ -48,9 +48,27 @@
           <a href="polityka-prywatnosci.html" class="nav-link">Polityka prywatności</a>
           <a href="regulamin.html" class="nav-link">Regulamin</a>
         </nav>
-        <div class="lang-switch" role="group" aria-label="Język">
-          <button type="button" data-lang="pl" class="is-active">PL</button>
-          <button type="button" data-lang="en" class="">EN</button>
+        <div class="lang-dropdown">
+          <button
+            type="button"
+            class="lang-dropdown__trigger"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="lang-menu"
+            id="lang-trigger"
+          >
+            <span class="lang-dropdown__label">PL</span>
+            <svg class="lang-dropdown__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+              <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="lang-dropdown__menu" id="lang-menu" role="listbox" aria-label="Język" hidden>
+            
+            <li role="presentation">
+              <button type="button" role="option" data-lang="en" class="lang-dropdown__option">EN</button>
+            </li>
+            
+          </ul>
         </div>
       </div>
     </div>

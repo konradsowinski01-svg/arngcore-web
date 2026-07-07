@@ -68,16 +68,48 @@
   maybeAutoRedirect();
 
   document.addEventListener("DOMContentLoaded", function () {
-    var switcher = document.querySelector(".lang-switch");
-    if (!switcher) return;
+    var dropdown = document.querySelector(".lang-dropdown");
+    if (!dropdown) return;
 
-    switcher.addEventListener("click", function (event) {
+    var trigger = dropdown.querySelector(".lang-dropdown__trigger");
+    var menu = dropdown.querySelector(".lang-dropdown__menu");
+    if (!trigger || !menu) return;
+
+    function closeMenu() {
+      dropdown.classList.remove("is-open");
+      trigger.setAttribute("aria-expanded", "false");
+      menu.hidden = true;
+    }
+
+    function openMenu() {
+      dropdown.classList.add("is-open");
+      trigger.setAttribute("aria-expanded", "true");
+      menu.hidden = false;
+    }
+
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      if (menu.hidden) openMenu();
+      else closeMenu();
+    });
+
+    menu.addEventListener("click", function (event) {
       var btn = event.target.closest("[data-lang]");
       if (!btn) return;
       var locale = btn.getAttribute("data-lang");
       if (locale !== "pl" && locale !== "en") return;
       event.preventDefault();
+      closeMenu();
       switchLocale(locale);
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!dropdown.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeMenu();
     });
   });
 })();

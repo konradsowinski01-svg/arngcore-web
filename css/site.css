@@ -160,43 +160,100 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.lang-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.15rem;
-  padding: 0.2rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+.lang-dropdown {
+  position: relative;
 }
 
-.lang-switch button {
+.lang-dropdown__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   appearance: none;
   border: 0;
   background: transparent;
   color: var(--text-secondary);
   font: inherit;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 500;
   letter-spacing: 0.04em;
-  padding: 0.35rem 0.65rem;
+  padding: 0.45rem 0.75rem;
   border-radius: 999px;
   cursor: pointer;
   transition: color 0.2s, background 0.2s;
 }
 
-.lang-switch button:hover {
+.lang-dropdown__trigger:hover,
+.lang-dropdown.is-open .lang-dropdown__trigger {
   color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
 }
 
-.lang-switch button.is-active {
-  color: var(--accent-peach);
-  background: rgba(245, 134, 78, 0.16);
-}
-
-.lang-switch button:focus-visible {
+.lang-dropdown__trigger:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.lang-dropdown__chevron {
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: transform 0.2s var(--ease), opacity 0.2s;
+}
+
+.lang-dropdown__trigger:hover .lang-dropdown__chevron,
+.lang-dropdown.is-open .lang-dropdown__chevron {
+  opacity: 0.85;
+}
+
+.lang-dropdown.is-open .lang-dropdown__chevron {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  min-width: 4.75rem;
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(31, 25, 21, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-card);
+  z-index: 110;
+}
+
+.lang-dropdown__menu[hidden] {
+  display: none;
+}
+
+.lang-dropdown__option {
+  display: block;
+  width: 100%;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 0.45rem 0.85rem;
+  border-radius: calc(var(--radius-sm) - 4px);
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-dropdown__option:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lang-dropdown__option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 
 /* ── Hero ── */
