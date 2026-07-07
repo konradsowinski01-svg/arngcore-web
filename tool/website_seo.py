@@ -12,8 +12,13 @@ SITE_NAME = "ARNGCOR"
 ORG_NAME = "SovinSky Studio"
 CONTACT_EMAIL = "kontakt@arngcor.pl"
 OG_IMAGE = f"{BASE_URL}/images/app-home.png"
+OG_IMAGE_EN = f"{BASE_URL}/images/app-home-en.png"
 OG_IMAGE_WIDTH = 499
 OG_IMAGE_HEIGHT = 1024
+
+
+def og_image_for_locale(locale: str) -> str:
+    return OG_IMAGE_EN if locale == "en" else OG_IMAGE
 THEME_COLOR = "#1a1512"
 
 # Pary stron PL (root) ↔ EN (/en/).
@@ -125,6 +130,8 @@ def seo_head(
         json_ld_block = f"""
   <script type="application/ld+json">{payload}</script>"""
 
+    og_img = og_image_for_locale(locale)
+
     return f"""  <meta name="description" content="{safe_desc}">
   <meta name="keywords" content="{html.escape(kw, quote=True)}">
   <meta name="author" content="{ORG_NAME}">
@@ -142,19 +149,20 @@ def seo_head(
   <meta property="og:title" content="{safe_title}">
   <meta property="og:description" content="{safe_desc}">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="{OG_IMAGE}">
+  <meta property="og:image" content="{og_img}">
   <meta property="og:image:width" content="{OG_IMAGE_WIDTH}">
   <meta property="og:image:height" content="{OG_IMAGE_HEIGHT}">
   <meta property="og:image:alt" content="{html.escape(og_alt, quote=True)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{safe_title}">
   <meta name="twitter:description" content="{safe_desc}">
-  <meta name="twitter:image" content="{OG_IMAGE}">{fonts}{json_ld_block}
+  <meta name="twitter:image" content="{og_img}">{fonts}{json_ld_block}
 """
 
 
 def home_json_ld(locale: str, description: str) -> dict:
     in_lang = "pl-PL" if locale == "pl" else "en-US"
+    app_image = og_image_for_locale(locale)
     return {
         "@context": "https://schema.org",
         "@graph": [
@@ -183,7 +191,7 @@ def home_json_ld(locale: str, description: str) -> dict:
                 "operatingSystem": "iOS",
                 "description": description,
                 "url": BASE_URL,
-                "image": OG_IMAGE,
+                "image": app_image,
                 "offers": {
                     "@type": "Offer",
                     "price": "0",

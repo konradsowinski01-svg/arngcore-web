@@ -46,6 +46,12 @@ class BuildWebsiteTest(unittest.TestCase):
         self.assertIn('data-lang="pl"', html)
         self.assertIn('data-lang="en"', html)
         self.assertIn("/js/i18n.js", html)
+        self.assertIn("/images/app-home-en.png", html)
+
+    def test_pl_home_uses_pl_mock(self) -> None:
+        html = (_REPO / "index.html").read_text(encoding="utf-8")
+        self.assertIn("/images/app-home.png", html)
+        self.assertNotIn("/images/app-home-en.png", html)
 
     def test_sitemap_has_eight_urls(self) -> None:
         root = ET.fromstring((_REPO / "sitemap.xml").read_text(encoding="utf-8"))
