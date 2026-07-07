@@ -19,31 +19,9 @@
           <a href="{{ urls.privacy }}" class="nav-link{% if active == 'privacy' %} is-active{% endif %}">{{ t.nav.privacy }}</a>
           <a href="{{ urls.terms }}" class="nav-link{% if active == 'terms' %} is-active{% endif %}">{{ t.nav.terms }}</a>
         </nav>
-        <div class="lang-dropdown">
-          <button
-            type="button"
-            class="lang-dropdown__trigger"
-            aria-haspopup="listbox"
-            aria-expanded="false"
-            aria-controls="lang-menu"
-            id="lang-trigger"
-          >
-            <span class="lang-dropdown__label">{% if t.locale == 'pl' %}{{ t.lang.pl }}{% else %}{{ t.lang.en }}{% endif %}</span>
-            <svg class="lang-dropdown__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
-              <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <ul class="lang-dropdown__menu" id="lang-menu" role="listbox" aria-label="{{ t.lang.aria }}" hidden>
-            {% if t.locale == 'pl' %}
-            <li role="presentation">
-              <button type="button" role="option" data-lang="en" class="lang-dropdown__option">{{ t.lang.en }}</button>
-            </li>
-            {% else %}
-            <li role="presentation">
-              <button type="button" role="option" data-lang="pl" class="lang-dropdown__option">{{ t.lang.pl }}</button>
-            </li>
-            {% endif %}
-          </ul>
+        <div class="lang-switch" role="group" aria-label="{{ t.lang.aria }}">
+          <button type="button" data-lang="pl" class="{% if t.locale == 'pl' %}is-active{% endif %}">{{ t.lang.pl }}</button>
+          <button type="button" data-lang="en" class="{% if t.locale == 'en' %}is-active{% endif %}">{{ t.lang.en }}</button>
         </div>
       </div>
     </div>

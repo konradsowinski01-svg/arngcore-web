@@ -1,0 +1,195 @@
+ARNGCOR APP PRIVACY POLICY
+Document version: 2026-06-20
+
+1. Who is the data controller
+
+The controller of your personal data is Konrad Sowinski, operating a sole proprietorship under the business name "Konrad Sowinski" (hereinafter: "Controller", "we"), creator of the ARNGCOR mobile application.
+
+Controller contact details for privacy and GDPR matters:
+- name: Konrad Sowinski
+- tax ID (NIP): 8883147199
+- e-mail: LEGAL_CONTACT_EMAIL
+
+2. What this policy covers
+
+This policy describes how we process personal data in the ARNGCOR mobile application (iOS / Android) - including when creating an account, using workouts, subscriptions, in-app purchases, and privacy settings.
+
+This policy has been prepared with regard to Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR; in Poland commonly referred to as RODO) and Polish personal data protection laws.
+
+3. What data we collect
+
+Depending on how you use the application, we may process:
+
+3.1. Account and login data
+- e-mail address;
+- password (stored only in encrypted form on the authentication provider's side);
+- account identifier (UUID);
+- Apple or Google sign-in data (OAuth provider identifier, linked to an account in our infrastructure);
+- optional phone number, if you provide it when signing in with the authentication provider;
+- account creation date and last login date (technical session metadata).
+
+3.2. Profile and workout personalization
+- display name (first name / nickname);
+- wellness goal (e.g. strength and mobility, pain relief, new skills);
+- flexibility level (in-app test result);
+- age, weight, weight unit, gender (including the option "prefer not to say");
+- type of sport activity;
+- post-session responses (e.g. perceived difficulty, exercise fit, hold-time preferences).
+
+3.3. Health and fitness data (special category under GDPR Art. 9)
+- information about stretching level, pain- or mobility-related goals, exercise progress, practice time, completed exercises, challenges (Wheel challenge program, Front Split challenge program), and Pain Relief sequences;
+- we process the above data only on the basis of your explicit consent given at registration (checkbox in the app) and to the extent necessary to provide the service (adjusting training plans).
+
+3.4. Progress and in-app activity
+- history of completed exercises (exercise identifier, date, session source);
+- practice days in the calendar;
+- total mobility time by day;
+- progress in Wheel challenge and Front Split challenge (stage, number of sessions, assessment results);
+- number of free daily practice sessions used during the trial period (currently up to 4 sessions) - stored on the server linked to the account;
+- local data saved on the device before account creation (guest onboarding draft), then - after registration - linked to the account;
+- Evening Flow checklist - state of checked items for a given day; stored only locally on the device, we do not sync it to the server.
+
+3.5. Consents and legal audit
+- version of the accepted terms of service and privacy policy;
+- date and time of acceptance of legal documents;
+- date and time of consent to health / fitness data;
+- timestamp of consent records in the database.
+
+3.6. Bug reports
+- message content that you enter yourself;
+- account identifier (so we can respond to the report).
+
+3.7. Payments and entitlements (Apple In-App Purchase)
+- information about an active Premium plan, subscription expiry date, and lifetime access to Wheel challenge or Front Split challenge - stored on the server after purchase verification in the Apple App Store;
+- Apple transaction identifiers (transaction_id, original_transaction_id), product identifiers, purchase and expiry dates, transaction environment (e.g. production or sandbox);
+- the above data is used to verify entitlements, restore purchases, and prevent abuse;
+- card payment details, invoices, and refunds are handled solely by Apple - we do not store payment card numbers.
+
+3.8. Local notifications
+- preference to enable practice reminders;
+- selected reminder time;
+- device time zone (to schedule the notification).
+These settings are stored mainly on your device.
+
+3.9. Optional Apple Health / Health Connect integration
+- with your consent, the app may request access to the following categories: steps, workout, active energy;
+- in the current version of the app, we do not read values from these services to personalize workouts or send them to our server - the integration serves only to grant permissions in the operating system according to the settings you choose;
+- you can revoke access at any time in iOS / Android system settings.
+
+3.10. Technical data necessary for the service to operate
+- login session token (maintaining sign-in);
+- API requests (profile, progress, and billing entitlement sync);
+- purchase verification calls (Supabase edge function).
+
+We do not run behavioral advertising, we do not sell personal data to third parties for marketing purposes, and we do not use external tracking analytics tools (e.g. Firebase Analytics, advertising SDKs).
+
+4. Where the data comes from
+
+- you provide it yourself in onboarding, profile, settings, and the bug report form;
+- it is generated automatically when you use workouts (progress, statistics);
+- it comes from Apple / Google when signing in via OAuth;
+- it comes from the Apple App Store when purchasing and verifying Premium subscription and one-time purchases (Wheel challenge, Front Split challenge) - confirmed on our server.
+
+5. Purposes and legal bases for processing
+
+| Purpose | Example data | Legal basis (GDPR) |
+|-----|------------------|------------------------|
+| Account creation and management | e-mail, password, OAuth | Art. 6(1)(b) - performance of a contract (account service) |
+| Workout and profile personalization | profile, progress, post-session responses | Art. 6(1)(b); for health data - Art. 9(2)(a) (consent) |
+| Recording legal consents | document versions, consent dates | Art. 6(1)(c) - legal obligation / legitimate interest (proof of consent) |
+| Premium subscription and in-app purchases | plan status, entitlements, Apple transactions | Art. 6(1)(b) - performance of a contract |
+| Daily practice trial period | session counter on the server | Art. 6(1)(b); Art. 6(1)(f) - abuse prevention |
+| Practice notifications | time, enabled status | Art. 6(1)(a) - consent (in-app settings) |
+| Bug reports | report content | Art. 6(1)(f) - legitimate interest (service quality) |
+| Security and abuse prevention | login, IAP verification | Art. 6(1)(f) |
+
+We do not send marketing newsletters based on your training account. We do not profile you for external advertising.
+
+6. Automated processing
+
+The app automatically selects exercises and session parameters (e.g. difficulty) based on your profile, flexibility level, and responses. This does not result in decisions producing legal effects within the meaning of GDPR Art. 22 (e.g. refusal of healthcare) - it serves only to personalize in-app content.
+
+7. Who we share data with (recipients / processors)
+
+7.1. Supabase (database hosting, authentication, and server functions)
+- stores account, profile, consents, training progress snapshot, billing entitlements, trial period counter, bug reports, and verifies Apple purchases;
+- acts as a processor on our instructions (data processing agreement / cloud provider terms).
+
+7.2. Apple (Sign in with Apple, App Store, optionally HealthKit)
+- Apple ID sign-in, in-app purchases, subscription management;
+- Apple policy: https://www.apple.com/legal/privacy/
+
+7.3. Google (Google sign-in)
+- only if you choose this sign-in method;
+- Google policy: https://policies.google.com/privacy
+
+7.4. Google Fonts (Poppins font download on first launch)
+- may involve a brief network connection to Google's CDN; we do not pass your training profile to Google in this process.
+
+Only authorized persons on the Controller's side (technical support) and infrastructure providers have access to database data, to the extent necessary to provide the service.
+
+8. Transfers of data outside the European Economic Area
+
+Cloud infrastructure (Supabase), Apple, and Google may process data on servers outside the EEA (e.g. in the USA). We aim to use a European database hosting region where available in the project configuration. In each case, mechanisms provided for under the GDPR are applied (e.g. EU Standard Contractual Clauses, adequacy decisions, or provider policies).
+
+9. How long we retain data
+
+- account, profile, progress, consent, billing entitlement, and trial period data - until you or we delete the account, and then for the period necessary to pursue claims and meet legal obligations (usually up to 3 years after the contract ends, unless laws require longer retention);
+- bug reports - for the time needed to review and improve the app, no longer than justified;
+- cloud provider backups - according to Supabase retention cycles (usually short-term);
+- local data on the device (including the Evening Flow checklist) - until you uninstall the app or clear app data in the system.
+
+After successful account deletion, we delete or anonymize data linked to the account in the database (profiles, consents, progress, billing entitlements, trial period, reports linked to the user identifier) according to database mechanisms (cascade deletion of related records).
+
+10. Your rights
+
+You have the rights provided under the GDPR:
+- access to data (Art. 15);
+- rectification (Art. 16);
+- erasure - "right to be forgotten" (Art. 17);
+- restriction of processing (Art. 18);
+- data portability (Art. 20);
+- objection to processing based on legitimate interest (Art. 21);
+- withdrawal of consent at any time (without affecting the lawfulness of processing before withdrawal) - in particular consent to health / fitness data (in that case we may no longer be able to personalize workouts that require such data).
+
+To exercise your rights, write to the contact address in section 1. In the app you can also:
+- download a copy of some server-side data (Settings - Privacy - Data management - "Download my data") - includes profile, consents, and decoded training progress; does not include the Apple transaction ledger or bug report content;
+- obtain a copy of billing data or bug reports by sending a request to LEGAL_CONTACT_EMAIL;
+- delete your account (Settings - Delete account);
+- withdraw notification consent in system / app settings;
+- disconnect Apple Health in iOS system settings.
+
+You have the right to lodge a complaint with a supervisory authority: President of the Personal Data Protection Office (Prezes Urzedu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warsaw, Poland, uodo.gov.pl).
+
+11. Obligation to provide data
+
+Providing an e-mail and password (or OAuth sign-in) is voluntary, but without an account you cannot sync profile and progress across devices.
+
+Providing profile data and consent to health / fitness data is voluntary, but without them the app cannot provide full workout personalization as intended by the product.
+
+Using paid features requires an active internet connection and server-side purchase verification.
+
+12. Security
+
+We apply measures appropriate to the risk, including:
+- encrypted HTTPS connection with the API;
+- JWT token authentication;
+- Row Level Security policies in the database (users can view and write only their own records);
+- no storage of passwords in plain text on our side (hashed by Supabase Auth);
+- Apple purchase verification only on the server (no local paywall bypass).
+
+No system is 100% immune to incidents - in the event of a personal data breach, we will inform you if the GDPR requires it.
+
+13. Children
+
+The app is not directed at children under 16. If you learn that a child provided us data without a guardian's consent, contact us - we will delete the account and data.
+
+14. Changes to this policy
+
+We may update this policy (e.g. after adding a new feature). We will inform you of material changes in the app or at your next sign-in. The version date at the top of this document indicates the current edition. At registration we record the policy version you accepted.
+
+15. Final provisions
+
+Matters not regulated herein are governed by Polish law and the GDPR.
+
+The ARNGCOR app does not replace medical advice. In case of pain or illness, consult a specialist.

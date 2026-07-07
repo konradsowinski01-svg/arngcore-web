@@ -1,0 +1,42 @@
+name: Website build check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "i18n/**"
+      - "templates/**"
+      - "css/**"
+      - "js/**"
+      - "assets/legal/**"
+      - "tool/**"
+      - "test/**"
+      - ".github/workflows/website.yml"
+  pull_request:
+    paths:
+      - "i18n/**"
+      - "templates/**"
+      - "css/**"
+      - "js/**"
+      - "assets/legal/**"
+      - "tool/**"
+      - "test/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install website build deps
+        run: pip install -r tool/requirements-website.txt
+
+      - name: Build website
+        run: python3 tool/build_website.py
+
+      - name: Test website build
+        run: python3 -m unittest test/build_website_test.py

@@ -1,0 +1,195 @@
+POLITYKA PRYWATNOŚCI APLIKACJI ARNGCOR
+Wersja dokumentu: 2026-06-20
+
+1. Kto jest administratorem danych
+
+Administratorem Twoich danych osobowych jest Konrad Sowiński, prowadzący jednoosobową działalność gospodarczą pod firmą „Konrad Sowiński” (dalej: „Administrator”, „my”), twórca aplikacji mobilnej ARNGCOR.
+
+Dane kontaktowe Administratora w sprawach prywatności i RODO:
+- imię i nazwisko: Konrad Sowiński
+- NIP: 8883147199
+- e-mail: LEGAL_CONTACT_EMAIL
+
+2. Czego dotyczy ta polityka
+
+Niniejsza polityka opisuje, jak przetwarzamy dane osobowe w aplikacji mobilnej ARNGCOR (iOS / Android) - w tym przy zakładaniu konta, korzystaniu z treningów, subskrypcji, zakupów w aplikacji i ustawień prywatności.
+
+Polityka została sporządzona z uwzględnieniem Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO) oraz polskich przepisów o ochronie danych osobowych.
+
+3. Jakie dane zbieramy
+
+W zależności od sposobu korzystania z aplikacji możemy przetwarzać:
+
+3.1. Dane konta i logowania
+- adres e-mail;
+- hasło (przechowywane wyłącznie w formie zaszyfrowanej po stronie dostawcy uwierzytelniania);
+- identyfikator konta (UUID);
+- dane logowania przez Apple lub Google (identyfikator u dostawcy OAuth, powiązany z kontem w naszej infrastrukturze);
+- opcjonalnie numer telefonu, jeśli podasz go przy logowaniu u dostawcy uwierzytelniania;
+- daty utworzenia konta i ostatniego logowania (metadane techniczne sesji).
+
+3.2. Profil i personalizacja treningów
+- wyświetlana nazwa (imię / pseudonim);
+- cel wellness (np. siła i mobilność, ulga w bólu, nowe umiejętności);
+- poziom elastyczności (wynik testu w aplikacji);
+- wiek, waga, jednostka wagi, płeć (w tym opcja „nie chcę podawać”);
+- rodzaj aktywności sportowej;
+- odpowiedzi po sesji (np. odczuwana trudność, dopasowanie ćwiczeń, preferencje czasu utrzymania pozycji).
+
+3.3. Dane dotyczące zdrowia i sprawności fizycznej (kategoria szczególna RODO art. 9)
+- informacje o poziomie rozciągania, celach związanych z bólem lub mobilnością, postępie w ćwiczeniach, czasie praktyki, wykonanych ćwiczeniach, wyzwaniach (program Mostek, program Szpagat) oraz sekwencjach ulgi w bólu;
+- powyższe dane przetwarzamy wyłącznie na podstawie Twojej wyraźnej zgody udzielonej przy rejestracji (checkbox w aplikacji) oraz w zakresie niezbędnym do świadczenia usługi (dopasowanie planów treningowych).
+
+3.4. Postęp i aktywność w aplikacji
+- historia ukończonych ćwiczeń (identyfikator ćwiczenia, data, źródło sesji);
+- dni praktyki w kalendarzu;
+- łączny czas mobilności wg dni;
+- postęp w wyzwaniach Mostek i Szpagat (etap, liczba sesji, wyniki sprawdzianów);
+- liczba wykorzystanych bezpłatnych sesji codziennej praktyki w okresie próbnym (obecnie do 4 sesji) - przechowywana na serwerze powiązanym z kontem;
+- dane lokalne zapisane na urządzeniu przed utworzeniem konta (szkic onboardingu gościa), następnie - po rejestracji - powiązane z kontem;
+- checklista wieczornego flow (Evening flow) - stan zaznaczonych pozycji na dany dzień; przechowywana wyłącznie lokalnie na urządzeniu, nie synchronizujemy jej na serwer.
+
+3.5. Zgody i audyt prawny
+- wersja zaakceptowanego regulaminu i polityki prywatności;
+- data i godzina akceptacji dokumentów prawnych;
+- data i godzina zgody na dane zdrowia / sprawności;
+- znacznik czasu zapisu zgód w bazie.
+
+3.6. Zgłoszenia błędów
+- treść wiadomości, którą sam wpisujesz;
+- identyfikator konta (aby móc odpowiedzieć na zgłoszenie).
+
+3.7. Płatności i uprawnienia (Apple In-App Purchase)
+- informacja o aktywnym planie Premium, dacie wygaśnięcia subskrypcji oraz o posiadaniu dożywotowego dostępu do wyzwań Mostek lub Szpagat - przechowywana na serwerze po weryfikacji zakupu w Apple App Store;
+- identyfikatory transakcji Apple (transaction_id, original_transaction_id), identyfikatory produktów, daty zakupu i wygaśnięcia, środowisko transakcji (np. produkcyjne lub sandbox);
+- powyższe dane służą weryfikacji uprawnień, przywracaniu zakupów i zapobieganiu nadużyciom;
+- szczegóły płatności kartą, faktury i zwroty obsługuje wyłącznie Apple - nie przechowujemy numerów kart płatniczych.
+
+3.8. Powiadomienia lokalne
+- preferencja włączenia przypomnienia o praktyce;
+- wybrana godzina przypomnienia;
+- strefa czasowa urządzenia (do zaplanowania powiadomienia).
+Te ustawienia są przechowywane głównie na Twoim urządzeniu.
+
+3.9. Opcjonalna integracja Apple Health / Health Connect
+- po Twojej zgodzie aplikacja może poprosić o dostęp do kategorii: kroki, trening (workout), energia aktywna (active energy);
+- w obecnej wersji aplikacji nie odczytujemy wartości z tych usług do personalizacji treningów ani nie wysyłamy ich na nasz serwer - integracja służy wyłącznie nadaniu uprawnień w systemie operacyjnym zgodnie z ustawieniami, które wybierzesz;
+- możesz w każdej chwili cofnąć dostęp w ustawieniach systemu iOS / Android.
+
+3.10. Dane techniczne niezbędne do działania usługi
+- token sesji logowania (utrzymanie zalogowania);
+- zapytania do API (synchronizacja profilu, postępu, uprawnień billingowych);
+- wywołania weryfikacji zakupów (edge function po stronie Supabase).
+
+Nie prowadzimy reklam behawioralnych, nie sprzedajemy danych osobowych podmiotom trzecim w celach marketingowych i nie używamy zewnętrznych narzędzi analityki śledzącej (np. Firebase Analytics, reklamowych SDK).
+
+4. Skąd pochodzą dane
+
+- podajesz je sam w onboardingu, profilu, ustawieniach, formularzu zgłoszenia błędu;
+- powstają automatycznie podczas korzystania z treningów (postęp, statystyki);
+- pochodzą od Apple / Google przy logowaniu OAuth;
+- pochodzą od Apple App Store przy zakupie i weryfikacji subskrypcji Premium oraz zakupów jednorazowych (Mostek, Szpagat) - potwierdzane na naszym serwerze.
+
+5. W jakim celu i na jakiej podstawie prawnej przetwarzamy dane
+
+| Cel | Przykładowe dane | Podstawa prawna (RODO) |
+|-----|------------------|------------------------|
+| Założenie i obsługa konta | e-mail, hasło, OAuth | art. 6 ust. 1 lit. b - wykonanie umowy (usługa konta) |
+| Dopasowanie treningów i profilu | profil, postęp, odpowiedzi po sesji | art. 6 ust. 1 lit. b; dla danych zdrowia - art. 9 ust. 2 lit. a (zgoda) |
+| Zapamiętanie zgód prawnych | wersje dokumentów, daty zgód | art. 6 ust. 1 lit. c - obowiązek prawny / prawnie uzasadniony interes (dowód zgody) |
+| Subskrypcja Premium i zakupy w aplikacji | status planu, entitlementy, transakcje Apple | art. 6 ust. 1 lit. b - wykonanie umowy |
+| Okres próbny codziennej praktyki | licznik sesji na serwerze | art. 6 ust. 1 lit. b; art. 6 ust. 1 lit. f - zapobieganie nadużyciom |
+| Powiadomienia o praktyce | godzina, włączenie | art. 6 ust. 1 lit. a - zgoda (ustawienia w aplikacji) |
+| Zgłoszenia błędów | treść zgłoszenia | art. 6 ust. 1 lit. f - prawnie uzasadniony interes (jakość usługi) |
+| Bezpieczeństwo i nadużycia | logowanie, weryfikacja IAP | art. 6 ust. 1 lit. f |
+
+Nie wysyłamy newsletterów marketingowych na podstawie Twojego konta treningowego. Nie profilujemy Cię pod kątem reklam zewnętrznych.
+
+6. Zautomatyzowane przetwarzanie
+
+Aplikacja automatycznie dobiera ćwiczenia i parametry sesji (np. trudność) na podstawie profilu, poziomu elastyczności i Twoich odpowiedzi. Nie prowadzi to do decyzji wywołujących skutki prawne w rozumieniu art. 22 RODO (np. odmowa świadczenia zdrowotnego) - służy wyłącznie personalizacji treści w aplikacji.
+
+7. Komu udostępniamy dane (odbiorcy / podmioty przetwarzające)
+
+7.1. Supabase (hosting bazy danych, uwierzytelniania i funkcji serwerowych)
+- przechowuje konto, profil, zgody, snapshot postępu treningowego, uprawnienia billingowe, licznik okresu próbnego, zgłoszenia błędów oraz weryfikuje zakupy Apple;
+- działa jako podmiot przetwarzający na nasze zlecenie (umowa powierzenia / warunki dostawcy chmury).
+
+7.2. Apple (Sign in with Apple, App Store, opcjonalnie HealthKit)
+- logowanie Apple ID, zakupy w aplikacji, zarządzanie subskrypcją;
+- polityka Apple: https://www.apple.com/legal/privacy/
+
+7.3. Google (logowanie przez Google)
+- wyłącznie jeśli wybierzesz tę metodę logowania;
+- polityka Google: https://policies.google.com/privacy
+
+7.4. Google Fonts (pobranie czcionki Poppins przy pierwszym uruchomieniu)
+- może wiązać się z krótkim połączeniem sieciowym z CDN Google; nie przekazujemy Google Twojego profilu treningowego w tym procesie.
+
+Dostęp do danych w bazie mają wyłącznie uprawnione osoby po stronie Administratora (obsługa techniczna) oraz dostawcy infrastruktury w zakresie niezbędnym do świadczenia usługi.
+
+8. Przekazywanie danych poza Europejski Obszar Gospodarczy
+
+Infrastruktura chmurowa (Supabase), Apple i Google mogą przetwarzać dane na serwerach poza EOG (np. w USA). Staramy się korzystać z regionu europejskiego hostingu bazy danych, o ile jest dostępny w konfiguracji projektu. W każdym przypadku stosowane są mechanizmy przewidziane RODO (np. standardowe klauzule umowne UE, decyzje o adekwatności lub polityki dostawców).
+
+9. Jak długo przechowujemy dane
+
+- dane konta, profilu, postępu, zgód, uprawnień billingowych i okresu próbnego - do momentu usunięcia konta przez Ciebie lub nas, a następnie przez okres niezbędny do dochodzenia roszczeń i spełnienia obowiązków prawnych (zwykle do 3 lat od zakończenia umowy, jeśli przepisy nie wymagają dłużej);
+- zgłoszenia błędów - przez czas potrzebny na rozpatrzenie i poprawę aplikacji, nie dłużej niż jest to uzasadnione;
+- kopie zapasowe dostawcy chmury - zgodnie z cyklem retencji Supabase (zwykle krótkoterminowo);
+- dane lokalne na urządzeniu (w tym checklista Evening flow) - do czasu odinstalowania aplikacji lub wyczyszczenia danych aplikacji w systemie.
+
+Po skutecznym usunięciu konta usuwamy lub anonimizujemy dane powiązane z kontem w bazie (profile, zgody, postęp, uprawnienia billingowe, okres próbny, zgłoszenia powiązane z identyfikatorem użytkownika) zgodnie z mechanizmami bazy (kaskadowe usunięcie powiązanych rekordów).
+
+10. Twoje prawa
+
+Przysługują Ci prawa przewidziane RODO:
+- dostępu do danych (art. 15);
+- sprostowania (art. 16);
+- usunięcia - „prawo do bycia zapomnianym” (art. 17);
+- ograniczenia przetwarzania (art. 18);
+- przenoszenia danych (art. 20);
+- sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie (art. 21);
+- cofnięcia zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania przed cofnięciem) - w szczególności zgody na dane zdrowia / sprawności (wtedy możemy nie być w stanie dalej personalizować treningów wymagających tych danych).
+
+Aby skorzystać z praw, napisz na adres kontaktowy z pkt 1. W aplikacji możesz też:
+- pobrać kopię części danych serwerowych (Ustawienia - Prywatność - Zarządzanie danymi - „Pobierz moje dane”) - obejmuje profil, zgody i zdekodowany postęp treningowy; nie obejmuje ledgeru transakcji Apple ani treści zgłoszeń błędów;
+- uzyskać kopię danych billingowych lub zgłoszeń błędów, wysyłając żądanie na LEGAL_CONTACT_EMAIL;
+- usunąć konto (Ustawienia - Usuwanie konta);
+- wycofać zgodę na powiadomienia w ustawieniach systemu / aplikacji;
+- odłączyć Apple Health w ustawieniach systemu iOS.
+
+Masz prawo wnieść skargę do organu nadzorczego: Prezes Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl).
+
+11. Obowiązek podania danych
+
+Podanie e-maila i hasła (lub logowania OAuth) jest dobrowolne, ale bez konta nie zsynchronizujesz profilu i postępu między urządzeniami.
+
+Podanie danych profilowych i zgody na dane zdrowia / sprawności jest dobrowolne, lecz bez nich aplikacja nie dopasuje pełnej personalizacji treningów zgodnie z założeniami produktu.
+
+Korzystanie z płatnych funkcji wymaga aktywnego połączenia internetowego i weryfikacji zakupu po stronie serwera.
+
+12. Bezpieczeństwo
+
+Stosujemy środki adekwatne do ryzyka, m.in.:
+- szyfrowane połączenie HTTPS z API;
+- uwierzytelnianie tokenem JWT;
+- polityki Row Level Security w bazie (użytkownik widzi i zapisuje wyłącznie własne rekordy);
+- brak przechowywania haseł w postaci jawnej po naszej stronie (haszuje je Supabase Auth);
+- weryfikacja zakupów Apple wyłącznie po stronie serwera (brak lokalnego obejścia paywalla).
+
+Żaden system nie jest w 100% odporny na incydenty - w razie naruszenia ochrony danych poinformujemy Cię, jeśli RODO tego wymaga.
+
+13. Dzieci
+
+Aplikacja nie jest skierowana do dzieci poniżej 16 roku życia. Jeśli dowiesz się, że dziecko podało nam dane bez zgody opiekuna, skontaktuj się z nami - usuniemy konto i dane.
+
+14. Zmiany polityki
+
+Możemy zaktualizować politykę (np. po dodaniu nowej funkcji). O istotnych zmianach poinformujemy w aplikacji lub przy kolejnym logowaniu. Data wersji na górze dokumentu wskazuje aktualne wydanie. Przy rejestracji zapisujemy numer wersji polityki, którą zaakceptowałeś.
+
+15. Postanowienia końcowe
+
+W sprawach nieuregulowanych stosuje się prawo polskie i RODO.
+
+Aplikacja ARNGCOR nie zastępuje porady lekarskiej. W razie bólu lub choroby skonsultuj się ze specjalistą.
