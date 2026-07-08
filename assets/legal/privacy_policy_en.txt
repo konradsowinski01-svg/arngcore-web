@@ -8,7 +8,6 @@ The controller of your personal data is Konrad Sowinski, operating a sole propri
 Controller contact details for privacy and GDPR matters:
 - name: Konrad Sowinski
 - tax ID (NIP): 8883147199
-- registered business address: LEGAL_BUSINESS_ADDRESS
 - e-mail: LEGAL_CONTACT_EMAIL
 
 2. What this policy covers

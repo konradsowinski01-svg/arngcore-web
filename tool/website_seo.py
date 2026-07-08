@@ -11,17 +11,6 @@ BASE_URL = "https://arngcor.pl"
 SITE_NAME = "ARNGCOR"
 ORG_NAME = "SovinSky Studio"
 CONTACT_EMAIL = "kontakt@arngcor.pl"
-# Adres z CEIDG (pusty = tekst zastępczy w dokumentach prawnych na stronie).
-BUSINESS_ADDRESS = ""
-
-
-def business_address_for_locale(locale: str) -> str:
-    custom = BUSINESS_ADDRESS.strip()
-    if custom:
-        return custom
-    if locale == "en":
-        return f"available on reasonable request at {CONTACT_EMAIL}"
-    return f"udostępniany na uzasadnione żądanie na {CONTACT_EMAIL}"
 
 
 OG_IMAGE = f"{BASE_URL}/images/app-home.png"
