@@ -1,15 +1,15 @@
 REGULAMIN APLIKACJI MOBILNEJ ARNGCOR
-Wersja dokumentu: 2026-06-20
+Wersja dokumentu: 2026-07-09
 
 1. Postanowienia ogólne
 
 1.1. Niniejszy Regulamin określa zasady korzystania z aplikacji mobilnej ARNGCOR (iOS / Android) oraz powiązanych usług cyfrowych (łącznie: „Usługa” lub „Aplikacja”).
 
-1.2. Usługę świadczy Konrad Sowiński, prowadzący jednoosobową działalność gospodarczą pod firmą „Konrad Sowiński” (dalej: „Usługodawca”, „my”), twórca aplikacji ARNGCOR. NIP: 8883147199. Kontakt: LEGAL_CONTACT_EMAIL.
+1.2. Usługę świadczy Konrad Sowiński, prowadzący jednoosobową działalność gospodarczą pod firmą „Konrad Sowiński” (dalej: „Usługodawca”, „my”), twórca aplikacji ARNGCOR. NIP: 8883147199. Adres: LEGAL_BUSINESS_ADDRESS. Kontakt: LEGAL_CONTACT_EMAIL.
 
 1.3. Korzystanie z Aplikacji polega na zawarciu umowy o świadczenie usług drogą elektroniczną na warunkach niniejszego Regulaminu oraz Polityki prywatności (osobny dokument w Aplikacji). W razie sprzeczności co do danych osobowych pierwszeństwo ma Polityka prywatności.
 
-1.4. Regulamin jest udostępniany w języku polskim. Użytkownik powinien zapoznać się z nim przed rejestracją i akceptuje go poprzez zaznaczenie odpowiedniego pola przy zakładaniu konta.
+1.4. Regulamin jest udostępniany w języku polskim i angielskim w Aplikacji. Użytkownik powinien zapoznać się z nim przed rejestracją i akceptuje go poprzez zaznaczenie odpowiedniego pola przy zakładaniu konta.
 
 2. Definicje
 
@@ -80,8 +80,8 @@ Wersja dokumentu: 2026-06-20
 8.1. Okres próbny: określona liczba ukończonych sesji codziennej praktyki (obecnie 4) jest bezpłatna i liczona na serwerze; po jej wykorzystaniu dalszy dostęp do codziennej praktyki wymaga aktywnego Planu Premium, o ile Aplikacja tak to prezentuje.
 
 8.2. Płatne produkty w Apple App Store (iOS) obejmują obecnie:
-- Plan Premium - subskrypcja auto-odnawialna (produkt: arngcor_premium_monthly; cena wyświetlana w Aplikacji przed zakupem, obecnie 39,99 zł miesięcznie);
-- Wyzwanie Mostek - jednorazowy zakup lifetime (produkt: arng_bridge_challenge_lifetime; obecnie 19,99 zł);
+- Plan Premium - subskrypcja auto-odnawialna (produkt: arngcor_premium_monthly_v2; cena wyświetlana w Aplikacji przed zakupem, obecnie 39,99 zł miesięcznie);
+- Wyzwanie Mostek - jednorazowy zakup lifetime (produkt: arng_bridge_challenge_lifetime_v2; obecnie 19,99 zł);
 - Wyzwanie Szpagat - jednorazowy zakup lifetime (produkt: arng_split_challenge_lifetime; obecnie 19,99 zł).
 Ostateczna cena i waluta są zawsze prezentowane przez Apple przed potwierdzeniem zakupu.
 

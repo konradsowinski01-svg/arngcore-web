@@ -1,5 +1,5 @@
 POLITYKA PRYWATNOŚCI APLIKACJI ARNGCOR
-Wersja dokumentu: 2026-06-20
+Wersja dokumentu: 2026-07-09
 
 1. Kto jest administratorem danych
 
@@ -8,6 +8,7 @@ Administratorem Twoich danych osobowych jest Konrad Sowiński, prowadzący jedno
 Dane kontaktowe Administratora w sprawach prywatności i RODO:
 - imię i nazwisko: Konrad Sowiński
 - NIP: 8883147199
+- adres prowadzenia działalności gospodarczej: LEGAL_BUSINESS_ADDRESS
 - e-mail: LEGAL_CONTACT_EMAIL
 
 2. Czego dotyczy ta polityka
@@ -32,7 +33,8 @@ W zależności od sposobu korzystania z aplikacji możemy przetwarzać:
 - wyświetlana nazwa (imię / pseudonim);
 - cel wellness (np. siła i mobilność, ulga w bólu, nowe umiejętności);
 - poziom elastyczności (wynik testu w aplikacji);
-- wiek, waga, jednostka wagi, płeć (w tym opcja „nie chcę podawać”);
+- wiek, wzrost (cm), waga, jednostka wagi, płeć (w tym opcja „nie chcę podawać”);
+- historia pomiarów wagi w aplikacji (daty i wartości) - głównie na urządzeniu; bieżąca waga w profilu może być synchronizowana z serwerem;
 - rodzaj aktywności sportowej;
 - odpowiedzi po sesji (np. odczuwana trudność, dopasowanie ćwiczeń, preferencje czasu utrzymania pozycji).
 
@@ -72,9 +74,10 @@ W zależności od sposobu korzystania z aplikacji możemy przetwarzać:
 Te ustawienia są przechowywane głównie na Twoim urządzeniu.
 
 3.9. Opcjonalna integracja Apple Health / Health Connect
-- po Twojej zgodzie aplikacja może poprosić o dostęp do kategorii: kroki, trening (workout), energia aktywna (active energy);
-- w obecnej wersji aplikacji nie odczytujemy wartości z tych usług do personalizacji treningów ani nie wysyłamy ich na nasz serwer - integracja służy wyłącznie nadaniu uprawnień w systemie operacyjnym zgodnie z ustawieniami, które wybierzesz;
-- możesz w każdej chwili cofnąć dostęp w ustawieniach systemu iOS / Android.
+- po Twojej zgodzie aplikacja może poprosić o dostęp do wagi, wzrostu i daty urodzenia w Apple Zdrowie (iOS) lub Health Connect (Android);
+- odczytujemy te dane do profilu ARNGCOR i wykresu wagi; zapisujemy wagę i wzrost do Apple Zdrowie / Health Connect, gdy logujesz wagę lub edytujesz profil (jeśli synchronizacja jest włączona);
+- personalizacja treningów opiera się na profilu ARNGCOR (w tym danych wpisanych ręcznie w onboardingu lub zsynchronizowanych z Apple Health / Health Connect);
+- możesz w każdej chwili cofnąć dostęp w ustawieniach systemu iOS / Android oraz w Ustawienia → Synchronizacja w aplikacji.
 
 3.10. Dane techniczne niezbędne do działania usługi
 - token sesji logowania (utrzymanie zalogowania);
@@ -157,7 +160,7 @@ Aby skorzystać z praw, napisz na adres kontaktowy z pkt 1. W aplikacji możesz 
 - uzyskać kopię danych billingowych lub zgłoszeń błędów, wysyłając żądanie na LEGAL_CONTACT_EMAIL;
 - usunąć konto (Ustawienia - Usuwanie konta);
 - wycofać zgodę na powiadomienia w ustawieniach systemu / aplikacji;
-- odłączyć Apple Health w ustawieniach systemu iOS.
+- odłączyć Apple Health / Health Connect w ustawieniach systemu oraz w Ustawienia → Synchronizacja w aplikacji.
 
 Masz prawo wnieść skargę do organu nadzorczego: Prezes Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl).
 

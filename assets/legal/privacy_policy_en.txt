@@ -1,5 +1,5 @@
 ARNGCOR APP PRIVACY POLICY
-Document version: 2026-06-20
+Document version: 2026-07-09
 
 1. Who is the data controller
 
@@ -8,6 +8,7 @@ The controller of your personal data is Konrad Sowinski, operating a sole propri
 Controller contact details for privacy and GDPR matters:
 - name: Konrad Sowinski
 - tax ID (NIP): 8883147199
+- registered business address: LEGAL_BUSINESS_ADDRESS
 - e-mail: LEGAL_CONTACT_EMAIL
 
 2. What this policy covers
@@ -32,7 +33,8 @@ Depending on how you use the application, we may process:
 - display name (first name / nickname);
 - wellness goal (e.g. strength and mobility, pain relief, new skills);
 - flexibility level (in-app test result);
-- age, weight, weight unit, gender (including the option "prefer not to say");
+- age, height (cm), weight, weight unit, gender (including the option "prefer not to say");
+- weight measurement history in the app (dates and values) - mainly on the device; current profile weight may be synced to the server;
 - type of sport activity;
 - post-session responses (e.g. perceived difficulty, exercise fit, hold-time preferences).
 
@@ -72,9 +74,10 @@ Depending on how you use the application, we may process:
 These settings are stored mainly on your device.
 
 3.9. Optional Apple Health / Health Connect integration
-- with your consent, the app may request access to the following categories: steps, workout, active energy;
-- in the current version of the app, we do not read values from these services to personalize workouts or send them to our server - the integration serves only to grant permissions in the operating system according to the settings you choose;
-- you can revoke access at any time in iOS / Android system settings.
+- with your consent, the app may request access to weight, height, and date of birth in Apple Health (iOS) or Health Connect (Android);
+- we read this data into your ARNGCOR profile and weight chart; we write weight and height to Apple Health / Health Connect when you log weight or edit your profile (if sync is enabled);
+- workout personalization is based on your ARNGCOR profile (including data entered manually during onboarding or synced from Apple Health / Health Connect);
+- you can revoke access at any time in iOS / Android system settings and in Settings > Sync in the app.
 
 3.10. Technical data necessary for the service to operate
 - login session token (maintaining sign-in);
@@ -157,7 +160,7 @@ To exercise your rights, write to the contact address in section 1. In the app y
 - obtain a copy of billing data or bug reports by sending a request to LEGAL_CONTACT_EMAIL;
 - delete your account (Settings - Delete account);
 - withdraw notification consent in system / app settings;
-- disconnect Apple Health in iOS system settings.
+- disconnect Apple Health / Health Connect in system settings and in Settings > Sync in the app.
 
 You have the right to lodge a complaint with a supervisory authority: President of the Personal Data Protection Office (Prezes Urzedu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warsaw, Poland, uodo.gov.pl).
 

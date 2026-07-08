@@ -18,6 +18,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from website_seo import (  # noqa: E402
     CONTACT_EMAIL,
     about_json_ld,
+    business_address_for_locale,
     home_json_ld,
     seo_head,
     web_page_json_ld,
@@ -79,8 +80,9 @@ def _load_i18n(locale: str) -> dict:
         return json.load(f)
 
 
-def _txt_to_body(raw: str) -> str:
+def _txt_to_body(raw: str, locale: str) -> str:
     raw = raw.replace("LEGAL_CONTACT_EMAIL", CONTACT_EMAIL)
+    raw = raw.replace("LEGAL_BUSINESS_ADDRESS", business_address_for_locale(locale))
     lines = raw.splitlines()
     parts: list[str] = []
     in_table = False
@@ -231,7 +233,7 @@ def main() -> None:
         for legal_key in ("privacy", "terms"):
             legal_meta = t["meta"][legal_key]
             legal_raw = _LEGAL_FILES[locale][legal_key].read_text(encoding="utf-8")
-            legal_body = _txt_to_body(legal_raw)
+            legal_body = _txt_to_body(legal_raw, locale)
             legal_seo = seo_head(
                 title=legal_meta["title"],
                 description=legal_meta["description"],
