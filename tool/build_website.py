@@ -22,6 +22,7 @@ from website_seo import (  # noqa: E402
     seo_head,
     web_page_json_ld,
     write_robots_txt,
+    write_site_webmanifest,
     write_sitemap_xml,
 )
 
@@ -260,8 +261,9 @@ def main() -> None:
             written.append(str(out_legal.relative_to(_REPO)))
 
     write_robots_txt(_WEBSITE)
+    write_site_webmanifest(_WEBSITE)
     write_sitemap_xml(_WEBSITE)
-    written.extend(["robots.txt", "sitemap.xml"])
+    written.extend(["robots.txt", "site.webmanifest", "sitemap.xml"])
 
     print("Zapisano:")
     for path in written:

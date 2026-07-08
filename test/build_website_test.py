@@ -48,6 +48,12 @@ class BuildWebsiteTest(unittest.TestCase):
         self.assertIn("/js/i18n.js", html)
         self.assertIn("/images/app-home-en.png", html)
 
+    def test_home_uses_app_favicon(self) -> None:
+        html = (_REPO / "index.html").read_text(encoding="utf-8")
+        self.assertIn('/images/favicon-32x32.png', html)
+        self.assertIn('/images/apple-touch-icon.png', html)
+        self.assertNotIn('rel="icon" href="/images/app-home.png"', html)
+
     def test_pl_home_uses_pl_mock(self) -> None:
         html = (_REPO / "index.html").read_text(encoding="utf-8")
         self.assertIn("/images/app-home.png", html)

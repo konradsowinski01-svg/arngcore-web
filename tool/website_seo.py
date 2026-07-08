@@ -18,6 +18,10 @@ OG_IMAGE_EN = f"{BASE_URL}/images/app-home-en.png"
 OG_IMAGE_WIDTH = 499
 OG_IMAGE_HEIGHT = 1024
 
+FAVICON_32 = f"{BASE_URL}/images/favicon-32x32.png"
+APPLE_TOUCH_ICON = f"{BASE_URL}/images/apple-touch-icon.png"
+APP_LOGO = f"{BASE_URL}/images/icon-512.png"
+
 
 def og_image_for_locale(locale: str) -> str:
     return OG_IMAGE_EN if locale == "en" else OG_IMAGE
@@ -145,8 +149,9 @@ def seo_head(
   <link rel="alternate" hreflang="pl" href="{alts['pl']}">
   <link rel="alternate" hreflang="en" href="{alts['en']}">
   <link rel="alternate" hreflang="x-default" href="{alts['en']}">
-  <link rel="icon" href="/images/app-home.png" type="image/png">
-  <link rel="apple-touch-icon" href="/images/app-home.png">
+  <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta property="og:type" content="{og_type}">
   <meta property="og:site_name" content="{SITE_NAME}">
   <meta property="og:locale" content="{og_locale}">
@@ -176,7 +181,7 @@ def home_json_ld(locale: str, description: str) -> dict:
                 "name": ORG_NAME,
                 "url": BASE_URL,
                 "email": CONTACT_EMAIL,
-                "logo": OG_IMAGE,
+                "logo": APP_LOGO,
             },
             {
                 "@type": "WebSite",
@@ -243,6 +248,34 @@ Allow: /
 Sitemap: {BASE_URL}/sitemap.xml
 """
     (website_dir / "robots.txt").write_text(content, encoding="utf-8")
+
+
+def write_site_webmanifest(website_dir: Path) -> None:
+    payload = {
+        "name": SITE_NAME,
+        "short_name": SITE_NAME,
+        "description": "ARNGCOR - codzienna praktyka ruchowa, mobilność i rozciąganie.",
+        "start_url": "/",
+        "display": "browser",
+        "background_color": THEME_COLOR,
+        "theme_color": THEME_COLOR,
+        "icons": [
+            {
+                "src": "/images/icon-192.png",
+                "sizes": "192x192",
+                "type": "image/png",
+            },
+            {
+                "src": "/images/icon-512.png",
+                "sizes": "512x512",
+                "type": "image/png",
+            },
+        ],
+    }
+    (website_dir / "site.webmanifest").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def write_sitemap_xml(website_dir: Path) -> None:
