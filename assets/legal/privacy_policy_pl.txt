@@ -1,5 +1,5 @@
 POLITYKA PRYWATNOŚCI APLIKACJI ARNGCOR
-Wersja dokumentu: 2026-07-09
+Wersja dokumentu: 2026-10-13
 
 1. Kto jest administratorem danych
 
@@ -46,7 +46,11 @@ W zależności od sposobu korzystania z aplikacji możemy przetwarzać:
 - dni praktyki w kalendarzu;
 - łączny czas mobilności wg dni;
 - postęp w wyzwaniach Mostek i Szpagat (etap, liczba sesji, wyniki sprawdzianów);
+- punkty doświadczenia praktyki (XP), poziom konta oraz ranga praktyki wynikające z ukończonych sesji codziennej praktyki - przechowywane na serwerze w profilu powiązanym z kontem;
+- dane ciągłości codziennej praktyki (m.in. ostatni dzień aktywności UTC oraz znacznik oczekującej korekty po przerwie) służące do dopasowania trudności i XP po dłuższej nieobecności;
+- parametry progresji codziennej praktyki (m.in. czas utrzymania pozycji i poziom trudności katalogu) synchronizowane z kontem;
 - liczba wykorzystanych bezpłatnych sesji codziennej praktyki w okresie próbnym (obecnie do 4 sesji) - przechowywana na serwerze powiązanym z kontem;
+- zapis postępu i XP na serwerze odbywa się poprzez dedykowane operacje synchronizacji (integralność konta), a nie przez dowolną bezpośrednią edycję pól progresji przez klienta;
 - dane lokalne zapisane na urządzeniu przed utworzeniem konta (szkic onboardingu gościa), następnie - po rejestracji - powiązane z kontem;
 - checklista wieczornego flow (Evening flow) - stan zaznaczonych pozycji na dany dzień; przechowywana wyłącznie lokalnie na urządzeniu, nie synchronizujemy jej na serwer.
 
@@ -155,7 +159,7 @@ Przysługują Ci prawa przewidziane RODO:
 - cofnięcia zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania przed cofnięciem) - w szczególności zgody na dane zdrowia / sprawności (wtedy możemy nie być w stanie dalej personalizować treningów wymagających tych danych).
 
 Aby skorzystać z praw, napisz na adres kontaktowy z pkt 1. W aplikacji możesz też:
-- pobrać kopię części danych serwerowych (Ustawienia - Prywatność - Zarządzanie danymi - „Pobierz moje dane”) - obejmuje profil, zgody i zdekodowany postęp treningowy; nie obejmuje ledgeru transakcji Apple ani treści zgłoszeń błędów;
+- pobrać kopię części danych serwerowych (Ustawienia - Prywatność - Zarządzanie danymi - „Pobierz moje dane”) - obejmuje profil (w tym XP, poziom/rangę, pola ciągłości i progresji codziennej praktyki, o ile są zapisane), zgody i zdekodowany postęp treningowy; nie obejmuje ledgeru transakcji Apple, licznika okresu próbnego ani treści zgłoszeń błędów;
 - uzyskać kopię danych billingowych lub zgłoszeń błędów, wysyłając żądanie na LEGAL_CONTACT_EMAIL;
 - usunąć konto (Ustawienia - Usuwanie konta);
 - wycofać zgodę na powiadomienia w ustawieniach systemu / aplikacji;

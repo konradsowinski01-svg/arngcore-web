@@ -3,26 +3,26 @@
   "html_lang": "pl",
   "meta": {
     "home": {
-      "title": "ARNGCOR — aplikacja mobilna do mobilności, rozciągania i wyzwań Mostek oraz Szpagat",
-      "description": "ARNGCOR to aplikacja mobilna na iOS do codziennej praktyki ruchowej, rozciągania i mobilności. Sesje wideo, plan dopasowany do Ciebie oraz wyzwania Mostek i Szpagat.",
-      "og_title": "ARNGCOR — aplikacja mobilna do mobilności i rozciągania",
-      "og_description": "Codzienna praktyka ruchowa, sesje wideo i wyzwania Mostek oraz Szpagat. Aplikacja ARNGCOR na iOS.",
-      "twitter_description": "Codzienna praktyka ruchowa, sesje wideo i wyzwania Mostek oraz Szpagat."
+      "title": "ARNGCOR - aplikacja mobilna do mobilności, rozciągania i wyzwań Mostek oraz Szpagat",
+      "description": "ARNGCOR to aplikacja mobilna na iOS do codziennej praktyki ruchowej. Sesje wideo, rangi praktyki i XP, dashboard postępu oraz wyzwania Mostek i Szpagat.",
+      "og_title": "ARNGCOR - aplikacja mobilna do mobilności i rozciągania",
+      "og_description": "Codzienna praktyka ruchowa, rangi i XP, sesje wideo oraz wyzwania Mostek i Szpagat. Aplikacja ARNGCOR na iOS - dostępna w App Store.",
+      "twitter_description": "Codzienna praktyka, rangi praktyki, sesje wideo oraz wyzwania Mostek i Szpagat."
     },
     "about": {
-      "title": "O nas — ARNGCOR",
-      "description": "Poznaj twórcę ARNGCOR i SovinSky Studio — niezależny projekt aplikacji do codziennej mobilności, rozciągania i wyzwań Mostek oraz Szpagat.",
-      "og_title": "O nas — ARNGCOR",
-      "og_description": "Poznaj twórcę ARNGCOR i SovinSky Studio — aplikacja do mobilności i rozciągania na iOS.",
+      "title": "O nas - ARNGCOR",
+      "description": "Poznaj twórcę ARNGCOR i SovinSky Studio - niezależny projekt aplikacji do codziennej mobilności, rozciągania i wyzwań Mostek oraz Szpagat.",
+      "og_title": "O nas - ARNGCOR",
+      "og_description": "Poznaj twórcę ARNGCOR i SovinSky Studio - aplikacja do mobilności i rozciągania na iOS.",
       "twitter_description": "Poznaj twórcę ARNGCOR i SovinSky Studio."
     },
     "privacy": {
-      "title": "Polityka prywatności — ARNGCOR",
-      "description": "Polityka prywatności aplikacji ARNGCOR — informacje o przetwarzaniu danych, RODO, kontach użytkowników i subskrypcji Premium."
+      "title": "Polityka prywatności - ARNGCOR",
+      "description": "Polityka prywatności aplikacji ARNGCOR - informacje o przetwarzaniu danych, RODO, kontach użytkowników i subskrypcji Premium."
     },
     "terms": {
-      "title": "Regulamin — ARNGCOR",
-      "description": "Regulamin korzystania z aplikacji mobilnej ARNGCOR — zasady usługi, subskrypcje, wyzwania Mostek i Szpagat oraz kontakt."
+      "title": "Regulamin - ARNGCOR",
+      "description": "Regulamin korzystania z aplikacji mobilnej ARNGCOR - zasady usługi, subskrypcje, wyzwania Mostek i Szpagat oraz kontakt."
     }
   },
   "nav": {
@@ -43,18 +43,19 @@
     "copyright": "© SovinSky Studio"
   },
   "home": {
-    "hero_eyebrow": "Aplikacja mobilna · iOS",
+    "hero_eyebrow": "Aplikacja mobilna · iOS · App Store",
     "hero_title_gradient": "Mobilność",
     "hero_title_mid": ", która",
     "hero_title_line2": "pasuje do Twojego dnia",
-    "hero_lead": "Przemyślana aplikacja mobilna, która łączy codzienną praktykę ruchową z podejściem inspirowanym jogą i fizjoterapią. Sesje wideo z katalogów opracowanych ze specjalistami, plan dopasowany do Ciebie i wyzwania, które realnie budują elastyczność - krok po kroku.",
-    "cta_app_store": "Wkrótce w App Store",
+    "hero_lead": "Przemyślana aplikacja mobilna, która łączy codzienną praktykę ruchową z podejściem inspirowanym jogą i fizjoterapią. Sesje wideo z katalogów opracowanych ze specjalistami, plan dopasowany do Ciebie, rangi praktyki i wyzwania, które realnie budują elastyczność - krok po kroku.",
+    "cta_app_store": "Dostępna w App Store",
     "cta_about": "Poznaj ARNGCOR",
+    "app_store_url": "",
     "phone_aria": "Telefon z ekranem aplikacji ARNGCOR",
     "hero_image": "/images/app-home.png",
     "trust": [
       "Codzienna praktyka wideo",
-      "Katalogi opracowane z ekspertami",
+      "Rangi praktyki i XP",
       "Plan dopasowany do Ciebie",
       "Wyzwania Mostek i Szpagat"
     ],
@@ -68,8 +69,12 @@
           "body": "Każdego dnia inna, starannie ułożona sesja wideo - dopasowana do celu, wieku, aktywności i poziomu elastyczności. Ćwiczenia z profesjonalnie przygotowanych katalogów, bez generatywnej sztucznej inteligencji."
         },
         {
-          "title": "Śledzenie postępu",
-          "body": "Serie dni, minuty pracy i wykonane ćwiczenia w jednym miejscu. Widzisz realny progres, a nie tylko wrażenie, że „dzisiaj ćwiczyłem”."
+          "title": "Rangi praktyki i XP",
+          "body": "Sześć rang z emblemami i poziomami konta. Za ukończone sesje zbierasz XP i widzisz awanse - motywacja, która zostaje z Tobą dzień po dniu."
+        },
+        {
+          "title": "Dashboard postępu",
+          "body": "Serie dni, minuty pracy, ćwiczenia i waga w jednym HUD. Widzisz realny progres, a nie tylko wrażenie, że „dzisiaj ćwiczyłem”."
         },
         {
           "title": "Pomoc w bólu",
@@ -77,15 +82,11 @@
         },
         {
           "title": "Programy wyzwań",
-          "body": "Etapowe plany z częścią stałą, ćwiczeniami wzmacniającymi i sprawdzianem, który odblokowuje kolejny poziom."
+          "body": "Etapowe plany Mostek i Szpagat z częścią stałą, ćwiczeniami wzmacniającymi i sprawdzianem, który odblokowuje kolejny poziom."
         },
         {
-          "title": "Profil i personalizacja",
-          "body": "Krótki onboarding ustawia cel, poziom elastyczności (1-4) i plan treningowy - bez skomplikowanych ustawień."
-        },
-        {
-          "title": "Prywatność w centrum",
-          "body": "Bez reklam behawioralnych i zewnętrznej analityki śledzącej. Twoje dane - Twoja sprawa. <a href=\"polityka-prywatnosci.html\">Polityka prywatności</a>"
+          "title": "Premium i personalizacja",
+          "body": "Cztery darmowe sesje codziennej praktyki, potem subskrypcja Premium bez limitu. Onboarding ustawia cel i poziom elastyczności; opcjonalnie synchronizacja wagi, wzrostu i wieku z Apple Zdrowie."
         }
       ]
     },
@@ -104,11 +105,11 @@
         },
         {
           "title": "Codzienna sesja",
-          "body": "Aplikacja układa sesję z katalogów ćwiczeń. Ćwiczenia wideo mają jasne cele: utrzymaj pozycję, wykonuj płynnie."
+          "body": "Aplikacja układa sesję z katalogów ćwiczeń. Po dłuższej przerwie delikatnie dopasowuje trudność, żeby kolejna sesja znów pasowała do Ciebie."
         },
         {
-          "title": "Postęp i wyzwania",
-          "body": "Odblokowuj kolejne etapy, w tym programy Mostek i Szpagat."
+          "title": "Postęp, rangi i wyzwania",
+          "body": "Zbieraj XP, awansuj w rangach i odblokowuj etapy Mostek oraz Szpagat."
         }
       ]
     },
@@ -156,7 +157,7 @@
     "cta_banner": {
       "title": "Zacznij od jednej sesji dziennie",
       "body": "Ruch staje się nawykiem, gdy jest prosty, krótki i dopasowany do Ciebie. ARNGCOR zostało stworzone dokładnie po to - żeby codziennie dawało Ci coś konkretnego.",
-      "button": "Wkrótce w App Store"
+      "button": "Dostępna w App Store"
     }
   },
   "about": {
@@ -173,8 +174,8 @@
       {
         "title": "Aplikacja ARNGCOR",
         "paragraphs": [
-          "Mobilna aplikacja na iOS (w przygotowaniu także na Android) z treningami wideo, programami wyzwań (Mostek, Szpagat), sekwencjami ulgi w bólu oraz opcjonalną subskrypcją Premium w Apple App Store.",
-          "Codzienna sesja powstaje z rozbudowanych katalogów ćwiczeń stworzonych przy współpracy z fizjoterapeutami, trenerami personalnymi i joginkami. Aplikacja dopasowuje ją do Twojego celu, poziomu elastyczności i aktywności.",
+          "Mobilna aplikacja na iOS (w przygotowaniu także na Android) z treningami wideo, rangami praktyki i XP, programami wyzwań (Mostek, Szpagat), sekwencjami ulgi w bólu oraz opcjonalną subskrypcją Premium w Apple App Store. Po czterech darmowych sesjach codziennej praktyki możesz kontynuować z Premium; wyzwania Mostek i Szpagat dostępne są jako zakupy dożywotnie.",
+          "Codzienna sesja powstaje z rozbudowanych katalogów ćwiczeń stworzonych przy współpracy z fizjoterapeutami, trenerami personalnymi i joginkami. Aplikacja dopasowuje ją do Twojego celu, poziomu elastyczności i aktywności. Opcjonalnie możesz synchronizować wagę, wzrost i datę urodzenia z Apple Zdrowie.",
           "Aplikacja nie zastępuje porady medycznej. Przed ćwiczeniami, w razie wątpliwości zdrowotnych, skonsultuj się ze specjalistą."
         ]
       }
@@ -188,8 +189,8 @@
     "terms_nav": "Regulamin"
   },
   "json_ld": {
-    "home_description": "Aplikacja mobilna ARNGCOR do codziennej praktyki ruchowej, rozciągania i mobilności. Wyzwania Mostek i Szpagat, sesje wideo i plan dopasowany do Ciebie.",
-    "about_name": "O nas — ARNGCOR",
-    "about_description": "Poznaj twórcę ARNGCOR i SovinSky Studio — niezależny projekt aplikacji do mobilności i rozciągania."
+    "home_description": "Aplikacja mobilna ARNGCOR do codziennej praktyki ruchowej, rozciągania i mobilności. Rangi praktyki, wyzwania Mostek i Szpagat, sesje wideo i plan dopasowany do Ciebie.",
+    "about_name": "O nas - ARNGCOR",
+    "about_description": "Poznaj twórcę ARNGCOR i SovinSky Studio - niezależny projekt aplikacji do mobilności i rozciągania."
   }
 }

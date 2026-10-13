@@ -57,7 +57,7 @@
   
   <main class="wrap main-content legal-doc">
     <p>ARNGCOR APP PRIVACY POLICY</p>
-<p>Document version: 2026-07-09</p>
+<p>Document version: 2026-10-13</p>
 
 <h2>1. Who is the data controller</h2>
 
@@ -113,7 +113,11 @@
 <li>practice days in the calendar;</li>
 <li>total mobility time by day;</li>
 <li>progress in Wheel challenge and Front Split challenge (stage, number of sessions, assessment results);</li>
+<li>practice experience points (XP), account level, and practice rank derived from completed daily practice sessions - stored on the server in the profile linked to the account;</li>
+<li>daily practice continuity data (including last activity UTC day and a pending adjustment flag after a break) used to adapt difficulty and XP after a longer absence;</li>
+<li>daily practice progression parameters (including hold time and catalog difficulty) synced with the account;</li>
 <li>number of free daily practice sessions used during the trial period (currently up to 4 sessions) - stored on the server linked to the account;</li>
+<li>progress and XP are written to the server through dedicated sync operations (account integrity), not by arbitrary direct client edits of progression fields;</li>
 <li>local data saved on the device before account creation (guest onboarding draft), then - after registration - linked to the account;</li>
 <li>Evening Flow checklist - state of checked items for a given day; stored only locally on the device, we do not sync it to the server.</li>
 </ul>
@@ -252,7 +256,7 @@
 
 <p>To exercise your rights, write to the contact address in section 1. In the app you can also:</p>
 <ul>
-<li>download a copy of some server-side data (Settings - Privacy - Data management - &quot;Download my data&quot;) - includes profile, consents, and decoded training progress; does not include the Apple transaction ledger or bug report content;</li>
+<li>download a copy of some server-side data (Settings - Privacy - Data management - &quot;Download my data&quot;) - includes profile (including XP, level/rank, continuity and daily practice progression fields, where stored), consents, and decoded training progress; does not include the Apple transaction ledger, the trial period counter, or bug report content;</li>
 <li>obtain a copy of billing data or bug reports by sending a request to kontakt@arngcor.pl;</li>
 <li>delete your account (Settings - Delete account);</li>
 <li>withdraw notification consent in system / app settings;</li>

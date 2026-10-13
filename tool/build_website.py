@@ -183,12 +183,15 @@ def main() -> None:
 
         home_meta = t["meta"]["home"]
         home_desc = t["json_ld"]["home_description"]
+        app_store_url = (t.get("home") or {}).get("app_store_url") or ""
         home_seo = seo_head(
             title=home_meta["title"],
             description=home_meta["description"],
             page_id="home",
             locale=locale,
-            json_ld=home_json_ld(locale, home_desc),
+            json_ld=home_json_ld(
+                locale, home_desc, app_store_url=app_store_url
+            ),
         )
         home_html = _render_page(
             env,

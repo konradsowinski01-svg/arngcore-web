@@ -1,5 +1,5 @@
 REGULAMIN APLIKACJI MOBILNEJ ARNGCOR
-Wersja dokumentu: 2026-07-09
+Wersja dokumentu: 2026-10-13
 
 1. Postanowienia ogólne
 
@@ -19,6 +19,8 @@ Wersja dokumentu: 2026-07-09
 - Plan Premium - płatna subskrypcja auto-odnawialna udostępniona w Aplikacji, obsługiwana przez Apple App Store (na iOS).
 - Wyzwanie Mostek / Wyzwanie Szpagat - programy treningowe dostępne po jednorazowym zakupie w App Store (dostęp lifetime na koncie powiązanym z Apple ID).
 - Okres próbny - ograniczona liczba bezpłatnych, ukończonych sesji codziennej praktyki przed wymogiem Premium (obecnie 4 sesje), liczona na serwerze powiązanym z Kontem.
+- XP (punkty doświadczenia) - wirtualne punkty postępu przyznawane za ukończone sesje codziennej praktyki; nie stanowią pieniądza ani waluty wirtualnej w rozumieniu przepisów o płatnościach.
+- Ranga praktyki / poziom konta - oznaczenia postępu wynikające z XP w Aplikacji.
 
 3. Kto może korzystać z Aplikacji
 
@@ -75,73 +77,83 @@ Wersja dokumentu: 2026-07-09
 
 7.4. Sekwencje ulgi w bólu (pain relief) oraz Evening flow są udostępniane bezpłatnie w ramach Konta i nie wymagają osobnego zakupu, o ile Aplikacja tak to prezentuje.
 
-8. Plany, płatności i subskrypcje
+8. Rangi praktyki, XP i ciągłość
 
-8.1. Okres próbny: określona liczba ukończonych sesji codziennej praktyki (obecnie 4) jest bezpłatna i liczona na serwerze; po jej wykorzystaniu dalszy dostęp do codziennej praktyki wymaga aktywnego Planu Premium, o ile Aplikacja tak to prezentuje.
+8.1. XP oraz ranga praktyki / poziom konta są oznaczeniami postępu w Aplikacji. Nie stanowią pieniądza, waluty wirtualnej, środków płatniczych ani przedmiotu własności przenoszalnego poza Konto. Nie można ich odsprzedawać, wymieniać na gotówkę ani przenosić na inne Konto.
 
-8.2. Płatne produkty w Apple App Store (iOS) obejmują obecnie:
+8.2. XP przyznawane są za ukończone sesje codziennej praktyki zgodnie z mechaniką Aplikacji. Nie sprzedajemy osobnych pakietów XP ani przyspieszeń rangi jako produktów In-App Purchase.
+
+8.3. Po dłuższej przerwie w codziennej praktyce Aplikacja może obniżyć XP, poziom lub rangę oraz złagodzić parametry trudności (m.in. czas utrzymania pozycji), aby kolejna sesja lepiej odpowiadała aktualnej formie Użytkownika. Taka korekta nie uprawnia do zwrotu pieniężnego ani rekompensaty poza zakresem bezwzględnie obowiązujących przepisów.
+
+8.4. Plan Premium odblokowuje dostęp do codziennej praktyki po wykorzystaniu okresu próbnego (zgodnie z pkt 9). Premium nie obejmuje sprzedaży XP, rang ani gwarancji awansu.
+
+9. Plany, płatności i subskrypcje
+
+9.1. Okres próbny: określona liczba ukończonych sesji codziennej praktyki (obecnie 4) jest bezpłatna i liczona na serwerze; po jej wykorzystaniu dalszy dostęp do codziennej praktyki wymaga aktywnego Planu Premium, o ile Aplikacja tak to prezentuje.
+
+9.2. Płatne produkty w Apple App Store (iOS) obejmują obecnie:
 - Plan Premium - subskrypcja auto-odnawialna (produkt: arngcor_premium_monthly_v2; cena wyświetlana w Aplikacji przed zakupem, obecnie 39,99 zł miesięcznie);
 - Wyzwanie Mostek - jednorazowy zakup lifetime (produkt: arng_bridge_challenge_lifetime_v2; obecnie 19,99 zł);
 - Wyzwanie Szpagat - jednorazowy zakup lifetime (produkt: arng_split_challenge_lifetime; obecnie 19,99 zł).
 Ostateczna cena i waluta są zawsze prezentowane przez Apple przed potwierdzeniem zakupu.
 
-8.3. Płatności, faktury, odnowienia subskrypcji i zwroty regulują warunki Apple (w tym Media Services Terms / zasady subskrypcji Apple). Usługodawca nie pobiera danych kart płatniczych.
+9.3. Płatności, faktury, odnowienia subskrypcji i zwroty regulują warunki Apple (w tym Media Services Terms / zasady subskrypcji Apple). Usługodawca nie pobiera danych kart płatniczych.
 
-8.4. Subskrypcja Premium może odnawiać się automatycznie do czasu anulowania w ustawieniach konta Apple (co najmniej 24 h przed końcem okresu - zgodnie z zasadami Apple).
+9.4. Subskrypcja Premium może odnawiać się automatycznie do czasu anulowania w ustawieniach konta Apple (co najmniej 24 h przed końcem okresu - zgodnie z zasadami Apple).
 
-8.5. Weryfikacja zakupów: po transakcji w App Store Aplikacja weryfikuje uprawnienia na serwerze Usługodawcy. Zakup w StoreKit bez potwierdzenia serwera nie odblokowuje płatnych treści. Przy problemach z dostępem użyj funkcji „Przywróć zakup” w Aplikacji z aktywnym internetem.
+9.5. Weryfikacja zakupów: po transakcji w App Store Aplikacja weryfikuje uprawnienia na serwerze Usługodawcy. Zakup w StoreKit bez potwierdzenia serwera nie odblokowuje płatnych treści. Przy problemach z dostępem użyj funkcji „Przywróć zakup” w Aplikacji z aktywnym internetem.
 
-8.6. Przywrócenie zakupów - funkcja w Aplikacji / App Store służy do odzyskania uprawnień Premium i wyzwań na urządzeniu powiązanym z Apple ID, po ponownej weryfikacji serwerowej.
+9.6. Przywrócenie zakupów - funkcja w Aplikacji / App Store służy do odzyskania uprawnień Premium i wyzwań na urządzeniu powiązanym z Apple ID, po ponownej weryfikacji serwerowej.
 
-8.7. Użytkownik będący konsumentem w rozumieniu prawa polskiego zachowuje uprawnienia wynikające z bezwzględnie obowiązujących przepisów (w tym o zgodności usługi cyfrowej z umową). Postępowanie reklamacyjne co do płatności Apple prowadzi się zgodnie z procedurą Apple; sprawy merytoryczne dotyczące działania Aplikacji - na LEGAL_CONTACT_EMAIL.
+9.7. Użytkownik będący konsumentem w rozumieniu prawa polskiego zachowuje uprawnienia wynikające z bezwzględnie obowiązujących przepisów (w tym o zgodności usługi cyfrowej z umową). Postępowanie reklamacyjne co do płatności Apple prowadzi się zgodnie z procedurą Apple; sprawy merytoryczne dotyczące działania Aplikacji - na LEGAL_CONTACT_EMAIL.
 
-9. Odpowiedzialność Usługodawcy i ograniczenia
+10. Odpowiedzialność Usługodawcy i ograniczenia
 
-9.1. Usługodawca dokłada starań, aby Aplikacja działała zgodnie z przeznaczeniem, jednak nie gwarantuje nieprzerwanego działania, braku błędów ani osiągnięcia określonych efektów zdrowotnych, sylwetki czy sprawności.
+10.1. Usługodawca dokłada starań, aby Aplikacja działała zgodnie z przeznaczeniem, jednak nie gwarantuje nieprzerwanego działania, braku błędów ani osiągnięcia określonych efektów zdrowotnych, sylwetki czy sprawności.
 
-9.2. Usługa dostarczana jest w stanie „tak jak jest” (as is), w granicach dopuszczalnych przez prawo - z poszanowaniem praw konsumenta do zgodności usługi cyfrowej z umową.
+10.2. Usługa dostarczana jest w stanie „tak jak jest” (as is), w granicach dopuszczalnych przez prawo - z poszanowaniem praw konsumenta do zgodności usługi cyfrowej z umową.
 
-9.3. Wyłączenie i ograniczenie odpowiedzialności (w najszerszym zakresie dopuszczalnym przez prawo polskie i unijne, bez uszczerbku dla praw konsumenta z tytułu szkody na osobie i innych bezwzględnych przepisów):
+10.3. Wyłączenie i ograniczenie odpowiedzialności (w najszerszym zakresie dopuszczalnym przez prawo polskie i unijne, bez uszczerbku dla praw konsumenta z tytułu szkody na osobie i innych bezwzględnych przepisów):
 - Usługodawca nie odpowiada za szkody wynikłe z niewłaściwego korzystania z Aplikacji, zlekceważenia ostrzeżeń zdrowotnych, ćwiczeń wbrew zaleceniom medycznym, podania nieprawdziwych danych profilowych, braku połączenia internetowego po stronie Użytkownika lub działań Użytkownika sprzecznych z Regulaminem;
 - nie odpowiada za przerwy wynikające z siły wyższej, awarii sieci, urządzenia Użytkownika, działań Apple, Google, Supabase lub innych dostawców infrastruktury;
 - nie odpowiada za utracone korzyści, szkody pośrednie, moralne w zakresie wykraczającym poza obowiązkowe przepisy;
 - odpowiedzialność odszkodowawcza Usługodawcy wobec Użytkownika nie będącego konsumentem ograniczona jest do wysokości opłat faktycznie zapłaconych na rzecz Usługodawcy za Aplikację w okresie 12 miesięcy poprzedzających zdarzenie, z wyjątkiem szkody wyrządzonej umyślnie;
 - wobec konsumenta ograniczenia stosuje się tylko w zakresie dozwolonym przez art. 385¹ KC i inne bezwzględne przepisy oraz ustawę o prawach konsumenta.
 
-9.4. Użytkownik zobowiązuje się do zabezpieczenia Usługodawcy na zasadach odszkodowania (hold harmless) za roszczenia osób trzecich wynikłe z naruszenia Regulaminu przez Użytkownika lub z treści przez niego przekazanych - w granicach prawa.
+10.4. Użytkownik zobowiązuje się do zabezpieczenia Usługodawcy na zasadach odszkodowania (hold harmless) za roszczenia osób trzecich wynikłe z naruszenia Regulaminu przez Użytkownika lub z treści przez niego przekazanych - w granicach prawa.
 
-10. Reklamacje i kontakt
+11. Reklamacje i kontakt
 
-10.1. Uwagi, reklamacje i zgłoszenia dotyczące Aplikacji: LEGAL_CONTACT_EMAIL. Podaj: opis problemu, wersję Aplikacji, model urządzenia, zrzut ekranu jeśli możliwy.
+11.1. Uwagi, reklamacje i zgłoszenia dotyczące Aplikacji: LEGAL_CONTACT_EMAIL. Podaj: opis problemu, wersję Aplikacji, model urządzenia, zrzut ekranu jeśli możliwy.
 
-10.2. Usługodawca odpowie na reklamację konsumenta dotyczącą zgodności usługi cyfrowej z umową w terminie do 14 dni od otrzymania zgłoszenia, chyba że dłuższy termin wynika z bezwzględnie obowiązujących przepisów.
+11.2. Usługodawca odpowie na reklamację konsumenta dotyczącą zgodności usługi cyfrowej z umową w terminie do 14 dni od otrzymania zgłoszenia, chyba że dłuższy termin wynika z bezwzględnie obowiązujących przepisów.
 
-10.3. Konsument może skorzystać z pozasądowego rozwiązywania sporów (m.in. platforma ODR UE: https://ec.europa.eu/consumers/odr) oraz właściwych organów ochrony konsumentów.
+11.3. Konsument może skorzystać z pozasądowego rozwiązywania sporów (m.in. platforma ODR UE: https://ec.europa.eu/consumers/odr) oraz właściwych organów ochrony konsumentów.
 
-11. Odstąpienie od umowy i usunięcie konta
+12. Odstąpienie od umowy i usunięcie konta
 
-11.1. W zakresie usług cyfrowych świadczonych natychmiast po wyraźnej zgodzie konsumenta (np. rozpoczęcie korzystania z Premium po zakupie) - przepisy o odstąpieniu od umowy zawartej na odległość mogą być ograniczone zgodnie z art. 38 pkt 13 ustawy o prawach konsumenta. Szczegóły zwrotów za subskrypcję Apple - wg zasad Apple.
+12.1. W zakresie usług cyfrowych świadczonych natychmiast po wyraźnej zgodzie konsumenta (np. rozpoczęcie korzystania z Premium po zakupie) - przepisy o odstąpieniu od umowy zawartej na odległość mogą być ograniczone zgodnie z art. 38 pkt 13 ustawy o prawach konsumenta. Szczegóły zwrotów za subskrypcję Apple - wg zasad Apple.
 
-11.2. Użytkownik może usunąć Konto w ustawieniach Aplikacji (Usuwanie konta) lub zgłosić żądanie usunięcia na LEGAL_CONTACT_EMAIL. Usunięcie danych osobowych - zgodnie z Polityką prywatności. Anulowanie subskrypcji Premium odbywa się w ustawieniach konta Apple.
+12.2. Użytkownik może usunąć Konto w ustawieniach Aplikacji (Usuwanie konta) lub zgłosić żądanie usunięcia na LEGAL_CONTACT_EMAIL. Usunięcie danych osobowych - zgodnie z Polityką prywatności. Anulowanie subskrypcji Premium odbywa się w ustawieniach konta Apple.
 
-12. Zmiany Regulaminu
+13. Zmiany Regulaminu
 
-12.1. Usługodawca może zmienić Regulamin z ważnych przyczyn (zmiana prawa, funkcji, płatności). O istotnych zmianach poinformuje w Aplikacji lub e-mailem przed wejściem w życie, z możliwością zapoznania się z nową treścią.
+13.1. Usługodawca może zmienić Regulamin z ważnych przyczyn (zmiana prawa, funkcji, płatności). O istotnych zmianach poinformuje w Aplikacji lub e-mailem przed wejściem w życie, z możliwością zapoznania się z nową treścią.
 
-12.2. Dalsze korzystanie po terminie wejścia zmian w życie oznacza akceptację, o ile prawo nie wymaga wyraźnej ponownej zgody.
+13.2. Dalsze korzystanie po terminie wejścia zmian w życie oznacza akceptację, o ile prawo nie wymaga wyraźnej ponownej zgody.
 
-12.3. Przy rejestracji zapisywana jest wersja Regulaminu zaakceptowanego przez Użytkownika.
+13.3. Przy rejestracji zapisywana jest wersja Regulaminu zaakceptowanego przez Użytkownika.
 
-13. Prawo właściwe i spory
+14. Prawo właściwe i spory
 
-13.1. Regulamin podlega prawu polskiemu, z poszanowaniem imperatywnych norm prawa UE stosowanych do konsumentów z innych państw członkowskich.
+14.1. Regulamin podlega prawu polskiemu, z poszanowaniem imperatywnych norm prawa UE stosowanych do konsumentów z innych państw członkowskich.
 
-13.2. Spory będą rozstrzygane przez sąd właściwy według przepisów. Wobec konsumenta - zgodnie z jego wyborem: sąd miejsca zamieszkania konsumenta lub Usługodawcy, zgodnie z Kodeksem postępowania cywilnego.
+14.2. Spory będą rozstrzygane przez sąd właściwy według przepisów. Wobec konsumenta - zgodnie z jego wyborem: sąd miejsca zamieszkania konsumenta lub Usługodawcy, zgodnie z Kodeksem postępowania cywilnego.
 
-14. Postanowienia końcowe
+15. Postanowienia końcowe
 
-14.1. Jeżeli którekolwiek postanowienie jest nieważne, pozostałe zachowują moc.
+15.1. Jeżeli którekolwiek postanowienie jest nieważne, pozostałe zachowują moc.
 
-14.2. Regulamin wchodzi w życie z dniem publikacji wskazanej jako wersja dokumentu.
+15.2. Regulamin wchodzi w życie z dniem publikacji wskazanej jako wersja dokumentu.
 
-14.3. Korzystając z ARNGCOR, potwierdzasz, że rozumiesz ograniczenia medyczne Usługi i akceptujesz warunki powyższe.
+15.3. Korzystając z ARNGCOR, potwierdzasz, że rozumiesz ograniczenia medyczne Usługi i akceptujesz warunki powyższe.

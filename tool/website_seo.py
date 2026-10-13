@@ -169,9 +169,31 @@ def seo_head(
 """
 
 
-def home_json_ld(locale: str, description: str) -> dict:
+def home_json_ld(
+    locale: str, description: str, *, app_store_url: str | None = None
+) -> dict:
     in_lang = "pl-PL" if locale == "pl" else "en-US"
     app_image = og_image_for_locale(locale)
+    store_url = (app_store_url or "").strip()
+    app_node: dict = {
+        "@type": "SoftwareApplication",
+        "@id": f"{BASE_URL}/#app",
+        "name": SITE_NAME,
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "description": description,
+        "url": store_url or BASE_URL,
+        "image": app_image,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "PLN",
+            "availability": "https://schema.org/InStock",
+        },
+        "publisher": {"@id": f"{BASE_URL}/#organization"},
+    }
+    if store_url:
+        app_node["downloadUrl"] = store_url
     return {
         "@context": "https://schema.org",
         "@graph": [
@@ -192,23 +214,7 @@ def home_json_ld(locale: str, description: str) -> dict:
                 "inLanguage": in_lang,
                 "publisher": {"@id": f"{BASE_URL}/#organization"},
             },
-            {
-                "@type": "SoftwareApplication",
-                "@id": f"{BASE_URL}/#app",
-                "name": SITE_NAME,
-                "applicationCategory": "HealthApplication",
-                "operatingSystem": "iOS",
-                "description": description,
-                "url": BASE_URL,
-                "image": app_image,
-                "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "PLN",
-                    "availability": "https://schema.org/PreOrder",
-                },
-                "publisher": {"@id": f"{BASE_URL}/#organization"},
-            },
+            app_node,
         ],
     }
 

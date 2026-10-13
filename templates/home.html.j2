@@ -15,7 +15,11 @@
         </h1>
         <p class="hero-lead">{{ t.home.hero_lead }}</p>
         <div class="hero-actions">
+          {% if t.home.app_store_url %}
+          <a href="{{ t.home.app_store_url }}" class="btn btn-primary" rel="noopener" target="_blank">{{ t.home.cta_app_store }}</a>
+          {% else %}
           <span class="btn btn-primary">{{ t.home.cta_app_store }}</span>
+          {% endif %}
           <a href="{{ urls.about }}" class="btn btn-ghost">{{ t.home.cta_about }}</a>
         </div>
       </div>
@@ -169,7 +173,11 @@
         <div class="cta-banner-glow" aria-hidden="true"></div>
         <h2 class="text-gradient">{{ t.home.cta_banner.title }}</h2>
         <p>{{ t.home.cta_banner.body }}</p>
+        {% if t.home.app_store_url %}
+        <a href="{{ t.home.app_store_url }}" class="btn btn-primary" rel="noopener" target="_blank">{{ t.home.cta_banner.button }}</a>
+        {% else %}
         <span class="btn btn-primary">{{ t.home.cta_banner.button }}</span>
+        {% endif %}
       </div>
     </div>
   </section>
